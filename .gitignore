@@ -1,8 +1,56 @@
-# Whitelist-style .gitignore
+# Whitelist-style .gitignore — allow only pipeline files
 # Ignore everything by default
 *
 
-# Then allow only the files we want to push
+# Core files
 !.gitignore
 !README.md
+
+# === SHIELD Pipeline ===
+
+# Stage 1: Data loading & parsing
+!load_scenarios.py
+!parse.py
+!structure.py
+!structure_Report.py
+
+# Stage 2: Abbreviation expansion
+!abbreviation.py
+!Abbreviations_Event_type.xlsx
+!Abbreviations_short_forms.xlsx
+
+# Stage 3: Completeness check
+!completeness_check.py
+
+# Stage 4: Segmentation
+!segmentation.py
+
+# Stage 5: Validation
+!validation.py
+!validation_logic.py
+!scenario_validator.py
+!scenario_standardizer.py
+
+# Stage 6: Ontology validation
+!ontology_validator.py
+
+# Stage 7: Quality evaluation (85% cosine similarity threshold)
+!quality_eval.py
+!quality_eval_with_validation.py
+!quality_metrics.py
+!report_generation.py
+
+# Stage 8: Database (ChromaDB + vector DB + user tables)
+!chromadb_deployment.py
+!vector_Db.py
+!database_manager.py
+
+# Stage 9: Simulation engine (end-to-end)
 !simulation_engine.py
+
+# Scenario data files (validated/quality-checked)
+!final_scenarios.json
+!final_scenarios_validated.json
+!final_scenarios_with_completeness.json
+!final_scenarios_with_quality.json
+!embedding_ready_scenarios.json

@@ -1,0 +1,695 @@
+[
+  {
+    "scenario_id": "Scenario_001",
+    "event_type_shorthand": "ACC",
+    "event_type_expanded": "MOTOR VEHICLE ACCIDENT/ACCIDENT",
+    "complaint_shorthand": "2 vehicle accident no injuries / whi Nissan 4d vs grey Toyota 4d on the right shoulder.",
+    "complaint_expanded": "2 vehicle accident no injuries / white Nissan 4 doors versus grey Toyota 4d on the right shoulder.",
+    "event_expanded_abbrs": [
+      "ACC"
+    ],
+    "complaint_expanded_abbrs": [
+      "VS",
+      "4D",
+      "WHI"
+    ],
+    "unknown_abbrs": [
+      " / "
+    ],
+    "n_expanded_event_type": 1,
+    "n_expanded_complaint": 3,
+    "primary_category": "traffic",
+    "sub_category": "vehicle_accident",
+    "incident_type": "property_damage_only",
+    "severity": "medium",
+    "controlled_tags": [
+      "minor_injury",
+      "property_damage_only"
+    ],
+    "vehicle_details": {
+      "vehicle_count": 1,
+      "colors": [
+        "grey",
+        "white"
+      ],
+      "makes": [
+        "toyota",
+        "nissan"
+      ],
+      "types": [
+        "vehicle"
+      ]
+    },
+    "injury_details": {
+      "injury_present": false,
+      "injury_count": 0,
+      "severity": "none"
+    },
+    "location_details": {
+      "location_type": "unknown",
+      "blocking": false
+    },
+    "keywords": {
+      "colors": [
+        "grey",
+        "white"
+      ],
+      "makes": [
+        "toyota",
+        "nissan"
+      ],
+      "streets": []
+    },
+    "summary_quality_ok": true
+  },
+  {
+    "scenario_id": "Scenario_002",
+    "event_type_shorthand": "ACC",
+    "event_type_expanded": "MOTOR VEHICLE ACCIDENT/ACCIDENT",
+    "complaint_shorthand": "Gry Galant vs Tan Supra// No injs// blocking intersection",
+    "complaint_expanded": "Gray/ Grey Galant versus Tan Supra// No injuries// blocking intersection",
+    "event_expanded_abbrs": [
+      "ACC"
+    ],
+    "complaint_expanded_abbrs": [
+      "GRY",
+      "Injs",
+      "VS"
+    ],
+    "unknown_abbrs": [
+      "// "
+    ],
+    "n_expanded_event_type": 1,
+    "n_expanded_complaint": 3,
+    "primary_category": "traffic",
+    "sub_category": "other",
+    "incident_type": "property_damage_only",
+    "severity": "medium",
+    "controlled_tags": [],
+    "vehicle_details": {
+      "vehicle_count": 0,
+      "colors": [
+        "gray",
+        "grey"
+      ],
+      "makes": [],
+      "types": []
+    },
+    "injury_details": {
+      "injury_present": false,
+      "injury_count": 0,
+      "severity": "none"
+    },
+    "location_details": {
+      "location_type": "intersection",
+      "blocking": true
+    },
+    "keywords": {
+      "colors": [
+        "gray",
+        "grey"
+      ],
+      "makes": [],
+      "streets": []
+    },
+    "summary_quality_ok": true
+  },
+  {
+    "scenario_id": "Scenario_003",
+    "event_type_shorthand": "ACC",
+    "event_type_expanded": "MOTOR VEHICLE ACCIDENT/ACCIDENT",
+    "complaint_shorthand": "Received collison notification from vehicle // 2013 blk chevy malibu // unable to make contact with occupants of vehicle.",
+    "complaint_expanded": "Received collison notification from vehicle // 2013 black chevrolet malibu // unable to make contact with occupants of vehicle.",
+    "event_expanded_abbrs": [
+      "ACC"
+    ],
+    "complaint_expanded_abbrs": [
+      "BLK",
+      "Chevy"
+    ],
+    "unknown_abbrs": [
+      " // ",
+      "2013"
+    ],
+    "n_expanded_event_type": 1,
+    "n_expanded_complaint": 2,
+    "primary_category": "traffic",
+    "sub_category": "vehicle_accident",
+    "incident_type": "unspecified",
+    "severity": "medium",
+    "controlled_tags": [],
+    "vehicle_details": {
+      "vehicle_count": 2,
+      "colors": [
+        "black"
+      ],
+      "makes": [],
+      "types": [
+        "vehicle"
+      ]
+    },
+    "injury_details": {
+      "injury_present": null
+    },
+    "location_details": {
+      "location_type": "unknown",
+      "blocking": false
+    },
+    "keywords": {
+      "colors": [
+        "black"
+      ],
+      "makes": [],
+      "streets": []
+    },
+    "summary_quality_ok": true
+  },
+  {
+    "scenario_id": "Scenario_004",
+    "event_type_shorthand": "ACC",
+    "event_type_expanded": "MOTOR VEHICLE ACCIDENT/ACCIDENT",
+    "complaint_shorthand": "2 vehicle accident/ other driver refusing to exchange information / red chevy sedan vs sil for focus va // vjc9235 // located in the parking lot // no inj",
+    "complaint_expanded": "2 vehicle accident/ other driver refusing to exchange information / red chevrolet sedan versus silent alarm for focus va // vjc9235 // located in the parking lot // no injury",
+    "event_expanded_abbrs": [
+      "ACC"
+    ],
+    "complaint_expanded_abbrs": [
+      "Chevy",
+      "Inj",
+      "SIL",
+      "VS"
+    ],
+    "unknown_abbrs": [
+      " / ",
+      " // ",
+      "/ "
+    ],
+    "n_expanded_event_type": 1,
+    "n_expanded_complaint": 4,
+    "primary_category": "traffic",
+    "sub_category": "vehicle_accident",
+    "incident_type": "property_damage_only",
+    "severity": "medium",
+    "controlled_tags": [
+      "minor_injury"
+    ],
+    "vehicle_details": {
+      "vehicle_count": 1,
+      "colors": [
+        "red"
+      ],
+      "makes": [],
+      "types": [
+        "vehicle"
+      ]
+    },
+    "injury_details": {
+      "injury_present": false,
+      "injury_count": 0,
+      "severity": "none"
+    },
+    "location_details": {
+      "location_type": "parking_lot",
+      "blocking": false
+    },
+    "keywords": {
+      "colors": [
+        "red"
+      ],
+      "makes": [],
+      "streets": []
+    },
+    "summary_quality_ok": true
+  },
+  {
+    "scenario_id": "Scenario_005",
+    "event_type_shorthand": "ACC",
+    "event_type_expanded": "MOTOR VEHICLE ACCIDENT/ACCIDENT",
+    "complaint_shorthand": "2 vehicles white Mercedes suv and blk truck // no injuries // we pulled into the exxon.",
+    "complaint_expanded": "2 vehicles white Mercedes sport utility vehicle and black truck // no injuries // we pulled into the exxon.",
+    "event_expanded_abbrs": [
+      "ACC"
+    ],
+    "complaint_expanded_abbrs": [
+      "BLK",
+      "SUV"
+    ],
+    "unknown_abbrs": [
+      " // "
+    ],
+    "n_expanded_event_type": 1,
+    "n_expanded_complaint": 2,
+    "primary_category": "traffic",
+    "sub_category": "vehicle_accident",
+    "incident_type": "property_damage_only",
+    "severity": "medium",
+    "controlled_tags": [
+      "minor_injury",
+      "property_damage_only"
+    ],
+    "vehicle_details": {
+      "vehicle_count": 2,
+      "colors": [
+        "black",
+        "white"
+      ],
+      "makes": [
+        "mercedes"
+      ],
+      "types": [
+        "truck",
+        "vehicle"
+      ]
+    },
+    "injury_details": {
+      "injury_present": false,
+      "injury_count": 0,
+      "severity": "none"
+    },
+    "location_details": {
+      "location_type": "unknown",
+      "blocking": false
+    },
+    "keywords": {
+      "colors": [
+        "black",
+        "white"
+      ],
+      "makes": [
+        "mercedes"
+      ],
+      "streets": []
+    },
+    "summary_quality_ok": true
+  },
+  {
+    "scenario_id": "Scenario_006",
+    "event_type_shorthand": "ACC",
+    "event_type_expanded": "MOTOR VEHICLE ACCIDENT/ACCIDENT",
+    "complaint_shorthand": "2 veh accident //no inj // cllr involved // red toyt corolla and blu toyt corolla",
+    "complaint_expanded": "2 vehicle accident //no injury // caller involved // red toyt corolla and blue toyt corolla",
+    "event_expanded_abbrs": [
+      "ACC"
+    ],
+    "complaint_expanded_abbrs": [
+      "Inj",
+      "Blu",
+      "Veh",
+      "Cllr"
+    ],
+    "unknown_abbrs": [
+      " //",
+      " // "
+    ],
+    "n_expanded_event_type": 1,
+    "n_expanded_complaint": 4,
+    "primary_category": "traffic",
+    "sub_category": "vehicle_accident",
+    "incident_type": "property_damage_only",
+    "severity": "medium",
+    "controlled_tags": [
+      "minor_injury"
+    ],
+    "vehicle_details": {
+      "vehicle_count": 1,
+      "colors": [
+        "red",
+        "blue"
+      ],
+      "makes": [],
+      "types": [
+        "vehicle"
+      ]
+    },
+    "injury_details": {
+      "injury_present": false,
+      "injury_count": 0,
+      "severity": "none"
+    },
+    "location_details": {
+      "location_type": "unknown",
+      "blocking": false
+    },
+    "keywords": {
+      "colors": [
+        "red",
+        "blue"
+      ],
+      "makes": [],
+      "streets": []
+    },
+    "summary_quality_ok": true
+  },
+  {
+    "scenario_id": "Scenario_007",
+    "event_type_shorthand": "ACC",
+    "event_type_expanded": "MOTOR VEHICLE ACCIDENT/ACCIDENT",
+    "complaint_shorthand": "single vehicle accident // blu Subaru // off the road and hit a stump no injuries",
+    "complaint_expanded": "single vehicle accident // blue Subaru // off the road and hit a stump no injuries",
+    "event_expanded_abbrs": [
+      "ACC"
+    ],
+    "complaint_expanded_abbrs": [
+      "Blu"
+    ],
+    "unknown_abbrs": [
+      " // "
+    ],
+    "n_expanded_event_type": 1,
+    "n_expanded_complaint": 1,
+    "primary_category": "traffic",
+    "sub_category": "vehicle_accident",
+    "incident_type": "property_damage_only",
+    "severity": "medium",
+    "controlled_tags": [
+      "minor_injury",
+      "property_damage_only"
+    ],
+    "vehicle_details": {
+      "vehicle_count": 1,
+      "colors": [
+        "blue"
+      ],
+      "makes": [],
+      "types": [
+        "vehicle"
+      ]
+    },
+    "injury_details": {
+      "injury_present": false,
+      "injury_count": 0,
+      "severity": "none"
+    },
+    "location_details": {
+      "location_type": "unknown",
+      "blocking": false
+    },
+    "keywords": {
+      "colors": [
+        "blue"
+      ],
+      "makes": [],
+      "streets": []
+    },
+    "summary_quality_ok": true
+  },
+  {
+    "scenario_id": "Scenario_008",
+    "event_type_shorthand": "ACC",
+    "event_type_expanded": "MOTOR VEHICLE ACCIDENT/ACCIDENT",
+    "complaint_shorthand": "in the west bound lanes // 2 veh accident // no inj // blu jeep and a sil chevy not blocking",
+    "complaint_expanded": "in the west bound lanes // 2 vehicle accident // no injury // blue jeep and a silent alarm chevrolet not blocking",
+    "event_expanded_abbrs": [
+      "ACC"
+    ],
+    "complaint_expanded_abbrs": [
+      "Chevy",
+      "Blu",
+      "SIL",
+      "Inj",
+      "Veh"
+    ],
+    "unknown_abbrs": [
+      " // "
+    ],
+    "n_expanded_event_type": 1,
+    "n_expanded_complaint": 5,
+    "primary_category": "traffic",
+    "sub_category": "vehicle_accident",
+    "incident_type": "property_damage_only",
+    "severity": "high",
+    "controlled_tags": [
+      "blocking_traffic",
+      "minor_injury",
+      "not_blocking"
+    ],
+    "vehicle_details": {
+      "vehicle_count": 2,
+      "colors": [
+        "blue"
+      ],
+      "makes": [],
+      "types": [
+        "vehicle",
+        "jeep"
+      ]
+    },
+    "injury_details": {
+      "injury_present": false,
+      "injury_count": 0,
+      "severity": "none"
+    },
+    "location_details": {
+      "location_type": "unknown",
+      "blocking": false
+    },
+    "keywords": {
+      "colors": [
+        "blue"
+      ],
+      "makes": [],
+      "streets": []
+    },
+    "summary_quality_ok": true
+  },
+  {
+    "scenario_id": "Scenario_009",
+    "event_type_shorthand": "ACC",
+    "event_type_expanded": "MOTOR VEHICLE ACCIDENT/ACCIDENT",
+    "complaint_shorthand": "2 vehicle accident // no injuries // grn bmw and a drk gry vw // blocking Georgetown pike // headed toward rt7",
+    "complaint_expanded": "2 vehicle accident // no injuries // green bmw and a dark gray/ grey volkswagen // blocking Georgetown pike // headed toward rt7",
+    "event_expanded_abbrs": [
+      "ACC"
+    ],
+    "complaint_expanded_abbrs": [
+      "Grn",
+      "GRY",
+      "DRK",
+      "VW"
+    ],
+    "unknown_abbrs": [
+      " // "
+    ],
+    "n_expanded_event_type": 1,
+    "n_expanded_complaint": 4,
+    "primary_category": "traffic",
+    "sub_category": "vehicle_accident",
+    "incident_type": "property_damage_only",
+    "severity": "medium",
+    "controlled_tags": [
+      "blocking_traffic",
+      "minor_injury",
+      "property_damage_only"
+    ],
+    "vehicle_details": {
+      "vehicle_count": 1,
+      "colors": [
+        "gray",
+        "grey",
+        "green"
+      ],
+      "makes": [
+        "bmw"
+      ],
+      "types": [
+        "vehicle"
+      ]
+    },
+    "injury_details": {
+      "injury_present": false,
+      "injury_count": 0,
+      "severity": "none"
+    },
+    "location_details": {
+      "location_type": "unknown",
+      "blocking": true
+    },
+    "keywords": {
+      "colors": [
+        "gray",
+        "grey",
+        "green"
+      ],
+      "makes": [
+        "bmw"
+      ],
+      "streets": []
+    },
+    "summary_quality_ok": true
+  },
+  {
+    "scenario_id": "Scenario_010",
+    "event_type_shorthand": "ACC",
+    "event_type_expanded": "MOTOR VEHICLE ACCIDENT/ACCIDENT",
+    "complaint_shorthand": "male ran his car into mine and he does not have a license. Blk saab and a blk honda civic va//xvr9815 // no inj // pulled into parking lot //",
+    "complaint_expanded": "male ran his car into mine and he does not have a license. Black saab and a blk honda civic va//xvr9815 // no injury // pulled into parking lot //",
+    "event_expanded_abbrs": [
+      "ACC"
+    ],
+    "complaint_expanded_abbrs": [
+      "BLK",
+      "Inj"
+    ],
+    "unknown_abbrs": [
+      " //",
+      " // ",
+      "//"
+    ],
+    "n_expanded_event_type": 1,
+    "n_expanded_complaint": 2,
+    "primary_category": "traffic",
+    "sub_category": "other",
+    "incident_type": "property_damage_only",
+    "severity": "medium",
+    "controlled_tags": [],
+    "vehicle_details": {
+      "vehicle_count": 1,
+      "colors": [
+        "black"
+      ],
+      "makes": [
+        "honda"
+      ],
+      "types": [
+        "car"
+      ]
+    },
+    "injury_details": {
+      "injury_present": false,
+      "injury_count": 0,
+      "severity": "none"
+    },
+    "location_details": {
+      "location_type": "parking_lot",
+      "blocking": false
+    },
+    "keywords": {
+      "colors": [
+        "black"
+      ],
+      "makes": [
+        "honda"
+      ],
+      "streets": []
+    },
+    "summary_quality_ok": true
+  },
+  {
+    "scenario_id": "Scenario_011",
+    "event_type_shorthand": "ACC",
+    "event_type_expanded": "MOTOR VEHICLE ACCIDENT/ACCIDENT",
+    "complaint_shorthand": "2 vehicle accident // blk jeep and a gry gmc truck // not blocking // cllr has a headache but refuses rescue // moved to warren In",
+    "complaint_expanded": "2 vehicle accident // black jeep and a gray/ grey gmc truck // not blocking // caller has a headache but refuses rescue operation // moved to warren In",
+    "event_expanded_abbrs": [
+      "ACC"
+    ],
+    "complaint_expanded_abbrs": [
+      "RESCUE",
+      "BLK",
+      "GRY",
+      "Cllr"
+    ],
+    "unknown_abbrs": [
+      " // "
+    ],
+    "n_expanded_event_type": 1,
+    "n_expanded_complaint": 4,
+    "primary_category": "traffic",
+    "sub_category": "vehicle_accident",
+    "incident_type": "unspecified",
+    "severity": "high",
+    "controlled_tags": [
+      "blocking_traffic",
+      "not_blocking"
+    ],
+    "vehicle_details": {
+      "vehicle_count": 3,
+      "colors": [
+        "gray",
+        "grey",
+        "black"
+      ],
+      "makes": [],
+      "types": [
+        "truck",
+        "vehicle",
+        "jeep"
+      ]
+    },
+    "injury_details": {
+      "injury_present": null
+    },
+    "location_details": {
+      "location_type": "unknown",
+      "blocking": false
+    },
+    "keywords": {
+      "colors": [
+        "gray",
+        "grey",
+        "black"
+      ],
+      "makes": [],
+      "streets": []
+    },
+    "summary_quality_ok": true
+  },
+  {
+    "scenario_id": "Scenario_012",
+    "event_type_shorthand": "ACC",
+    "event_type_expanded": "MOTOR VEHICLE ACCIDENT/ACCIDENT",
+    "complaint_shorthand": "2 veh accident in front of the my eye doctor // gry prius and silver mercedez // no inj",
+    "complaint_expanded": "2 vehicle accident in front of the my eye doctor // gray/ grey prius and silver mercedez // no injury",
+    "event_expanded_abbrs": [
+      "ACC"
+    ],
+    "complaint_expanded_abbrs": [
+      "GRY",
+      "Inj",
+      "Veh"
+    ],
+    "unknown_abbrs": [
+      " // "
+    ],
+    "n_expanded_event_type": 1,
+    "n_expanded_complaint": 3,
+    "primary_category": "traffic",
+    "sub_category": "vehicle_accident",
+    "incident_type": "property_damage_only",
+    "severity": "medium",
+    "controlled_tags": [
+      "minor_injury"
+    ],
+    "vehicle_details": {
+      "vehicle_count": 1,
+      "colors": [
+        "gray",
+        "grey",
+        "silver"
+      ],
+      "makes": [],
+      "types": [
+        "vehicle"
+      ]
+    },
+    "injury_details": {
+      "injury_present": false,
+      "injury_count": 0,
+      "severity": "none"
+    },
+    "location_details": {
+      "location_type": "unknown",
+      "blocking": false
+    },
+    "keywords": {
+      "colors": [
+        "gray",
+        "grey",
+        "silver"
+      ],
+      "makes": [],
+      "streets": []
+    },
+    "summary_quality_ok": true
+  }
+]

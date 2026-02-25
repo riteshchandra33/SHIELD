@@ -1,0 +1,8 @@
+# Whitelist-style .gitignore
+# Ignore everything by default
+*
+
+# Then allow only the files we want to push
+!.gitignore
+!README.md
+!simulation_engine.py

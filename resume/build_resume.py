@@ -151,45 +151,46 @@ for line in ["**Master’s in Data Analytics and Engineering** | George Mason Un
 heading("PROFESSIONAL EXPERIENCE")
 job("George Mason University", "UI/UX Developer", "Fairfax, VA | August 2024 – Present")
 for b in [
-    "Modernized the UI architecture of a **multi-user research analytics dashboard** using **React** and **Python (FastAPI)**, "
-    "redesigning **information hierarchy, navigation, and layout** across functional modules to improve usability and consistency.",
-    "Built a reusable **component library and design system** (typography, spacing, interaction states) applying **responsive "
-    "design** and **accessibility (WCAG)** practices, standardizing UI patterns across all dashboard views.",
-    "Implemented **role-based access control (RBAC)** and token-based **authorization** on **FastAPI** endpoints, securing "
-    "multi-user access to datasets, models, and results by role and project.",
-    "Designed a **job queuing and scheduling** layer for long-running processing jobs over **30K+ documents**, supporting "
-    "**concurrent execution, prioritization**, and real-time job-status tracking surfaced in the UI.",
-    "Profiled and optimized end-to-end **run-processing pipelines** using **Python, PyTorch, MLflow, and Optuna**, cutting iteration "
-    "cycles from **3 days to under 18 hours** and serving predictions to the UI with **sub-200ms latency**.",
-    "Streamlined data-preparation workflows with **Pandas** and **Scikit-learn**, standardizing **15GB** of structured and "
-    "unstructured data across 6 datasets and reducing preparation time by **30%**.",
-    "Containerized services with **Docker** and automated releases through **CI/CD** pipelines, reducing release cycles from "
-    "**2 weeks to 5 days** and enabling **A/B testing** of UI and model variants.",
-    "Led **design and code reviews** using **Git** and **DVC**, and authored **technical documentation** and engineering best "
-    "practices, reducing onboarding time for new contributors to **under 2 days**.",
+    "Modernized the **UI architecture** of a multi-user research analytics platform through a full redesign in **React** and "
+    "**Python (FastAPI)**, improving **information hierarchy, usability, consistency, and layout** across functional modules "
+    "(data ingestion, job monitoring, results, and administration).",
+    "Designed and developed **modern, scalable web user interfaces** backed by a reusable **component library and design system**, "
+    "applying **responsive design** and **accessibility (WCAG)** standards and serving data to the UI with **sub-200ms latency**.",
+    "Enhanced **access control and authorization** by implementing **role-based access control (RBAC)** and token-based (**JWT**) "
+    "authentication on FastAPI endpoints, enforcing role- and project-level permissions for datasets, jobs, and results.",
+    "Built **job queuing and scheduling** for long-running compute jobs (NLP runs over **30K+ documents**) on the **ORC Hopper HPC "
+    "cluster**, supporting **concurrent execution, priority-based dispatching, and efficient resource allocation**.",
+    "Streamlined **end-to-end workflows** by identifying bottlenecks in data-preparation and training stages and **refactoring "
+    "orchestration logic**, standardizing **15GB** of data across 6 datasets and reducing preparation time by **30%**.",
+    "Analyzed **run-processing pipelines**, developed **performance metrics and statistics** (runtime, queue wait, throughput) with "
+    "**MLflow**, and applied optimization strategies that cut iteration cycles from **3 days to under 18 hours**.",
+    "Containerized platform services with **Docker** and automated delivery through **CI/CD pipelines**, reducing release cycles "
+    "from **2 weeks to 5 days** and enabling **A/B testing** of UI and backend changes.",
+    "Collaborated in **technical design discussions** and **code reviews** (Git, DVC), and authored **technical documentation** and "
+    "**engineering best practices**, reducing onboarding time for new contributors to **under 2 days**.",
 ]:
     bullet(b)
 
 job("Carelon Global Solutions", "Python Developer (Client: Accenture)", "India | January 2019 – July 2023")
 for b in [
-    "Engineered **access control and authorization** for enterprise **RESTful microservices** using **OAuth 2.0**, role-based "
-    "permissions, and **API versioning**, securing **HIPAA-compliant** healthcare data exchange for a U.S. healthcare client.",
-    "Orchestrated end-to-end workflows with **Apache Airflow DAGs** for data ingestion, transformation, and model retraining; "
-    "refactored **scheduling and dependency logic** to support **concurrent execution and prioritization**, reducing manual effort by **25%**.",
-    "Profiled and optimized large-scale **distributed processing workloads** by migrating from **Hive to Apache Spark/PySpark**, "
-    "tuning partitioning and job execution to significantly reduce processing time and increase throughput.",
-    "Built scalable **ETL pipelines** using **PySpark** and **AWS (S3, Glue, SageMaker)** with **Delta Lake**, improving data "
-    "reliability by **30%** across ingestion and processing stages.",
-    "Containerized and deployed Python services using **Docker, Kubernetes, and Jenkins CI/CD**, improving system uptime by "
-    "**20%** and enabling real-time EHR integration via **REST APIs**.",
-    "Developed real-time monitoring pipelines and **interactive Power BI dashboards** on **Azure Stream Analytics**, surfacing "
-    "**performance metrics and statistics** that reduced unplanned downtime by **20%**.",
-    "Delivered Python NLP services using **BERT** and **BioBERT** for clinical entity extraction, achieving **80% accuracy** and "
-    "reducing document processing time by **55%**.",
-    "Designed **MongoDB** data models and **Python/Java** validation scripts (UDFs) for high-throughput, fault-tolerant "
-    "pipelines, improving data quality and consistency.",
-    "Collaborated with Data Engineering, Product, and **Accenture** client stakeholders in **technical design discussions and code "
-    "reviews** to define use cases, KPIs, and delivery roadmaps, reducing project turnaround time by **15%**.",
+    "Designed and extended **access control and authorization** for enterprise **RESTful microservices** using **OAuth 2.0**, "
+    "role-based permissions, and **API versioning**, securing **HIPAA-compliant** data exchange for a U.S. healthcare client.",
+    "Enhanced **job scheduling and queuing** in **Apache Airflow**, configuring DAG priority weights, pools, and concurrency limits "
+    "to support **concurrent execution, prioritization, and efficient resource allocation**, reducing manual effort by **25%**.",
+    "Streamlined **end-to-end workflows** by identifying bottlenecks and **refactoring orchestration and dependency logic**, "
+    "improving coordination across ingestion, processing, and serving components and reducing project turnaround time by **15%**.",
+    "**Profiled and optimized long-running distributed workloads** by migrating from **Hive to Apache Spark/PySpark** and tuning "
+    "partitioning, caching, and executor resource allocation, significantly reducing processing time and increasing throughput.",
+    "Built scalable **distributed data-processing pipelines** using **PySpark** and **AWS (S3, Glue, SageMaker)** with **Delta "
+    "Lake**, improving data reliability by **30%** across ingestion and processing stages.",
+    "Developed **performance metrics and statistics** dashboards using **Azure Stream Analytics** and **Power BI** to monitor "
+    "pipeline throughput and system health, reducing unplanned downtime by **20%**.",
+    "Containerized and orchestrated Python services using **Docker** and **Kubernetes** with **Jenkins CI/CD**, improving system "
+    "uptime by **20%** and enabling real-time EHR integration via **REST APIs**.",
+    "Developed high-throughput **Python/Java** services, including **BERT/BioBERT** clinical entity extraction (**80% accuracy**, "
+    "**55%** faster processing) and fault-tolerant **MongoDB** data models for unstructured data.",
+    "Collaborated with engineering, product, and **Accenture** client teams in **technical design discussions** and **code "
+    "reviews**, and contributed **technical documentation** and engineering best practices.",
 ]:
     bullet(b)
 

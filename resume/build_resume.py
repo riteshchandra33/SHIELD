@@ -110,33 +110,30 @@ p.add_run(" | LinkedIn").font.size = Pt(12)
 
 # ---------------- Summary ----------------
 heading("PROFESSIONAL SUMMARY")
-bullet("**Python/UI Developer** with **6+ years** of experience enhancing and modernizing enterprise platforms, building "
-       "**modern, scalable web user interfaces**, **distributed data-processing pipelines**, and **containerized applications** "
-       "using **Python, Java, React, and FastAPI**. Proven expertise in **access control and authorization (OAuth 2.0, RBAC)**, "
-       "**job queuing and scheduling**, and **workflow orchestration (Apache Airflow)**.")
-bullet("Strong background in **profiling and optimizing long-running compute workloads** with **Apache Spark and PySpark**, "
-       "defining **performance metrics and statistics**, and refactoring orchestration logic to improve **execution efficiency "
-       "and throughput**. Experienced in **Docker, Kubernetes, and CI/CD pipelines** on **AWS** and **Azure**, delivering secure, "
-       "**HIPAA-compliant** systems.")
-bullet("Demonstrated success in **redesigning UI architecture** to improve **information hierarchy, usability, consistency, and "
-       "layout** across functional modules. Adept at **technical design discussions, code reviews, and technical documentation**, "
-       "collaborating effectively across engineering, product, and research teams.")
+bullet("**Python/UI Developer** with **6+ years** of experience enhancing and modernizing data platforms, building "
+       "**web dashboards and APIs**, **distributed data-processing pipelines**, and **containerized applications** using "
+       "**Python, Java, SQL, FastAPI, and Apache Spark**. Proven experience in **access control and authorization (OAuth 2.0)**, "
+       "**job scheduling**, and **workflow orchestration (Apache Airflow, 20+ production pipelines)**.")
+bullet("Strong background in **profiling and optimizing long-running compute workloads** — cutting iteration cycles from "
+       "**3 days to under 18 hours**, preprocessing overhead by **70%**, and release cycles from **2 weeks to 5 days**. Experienced "
+       "with **Docker, Kubernetes, and CI/CD** on **AWS** and **Azure**, delivering **HIPAA**- and **PCI-DSS**-compliant systems.")
+bullet("Demonstrated success designing **user-facing dashboards and interfaces** (FastAPI, Tableau, Power BI) with clear "
+       "**information hierarchy, usability, and consistent layout**. Adept at **technical design discussions, code reviews, and "
+       "technical documentation**, collaborating effectively across engineering, product, research, and client teams.")
 
 # ---------------- Skills ----------------
 heading("TECHNICAL SKILLS")
-skill("Programming & Scripting", "Python (pandas, NumPy, asyncio), Java, JavaScript, TypeScript, SQL (PostgreSQL, Oracle), Bash")
-skill("Web UI & Frontend", "React, HTML5, CSS3, Responsive Design, Component Libraries, Design Systems, Figma, "
-      "Accessibility (WCAG), Data Visualization (Plotly, Power BI, Tableau)")
-skill("Backend, APIs & Security", "FastAPI, Flask, RESTful Microservices, API Versioning, OAuth 2.0, JWT, "
-      "Role-Based Access Control (RBAC), Authentication & Authorization")
-skill("Job Scheduling & Orchestration", "Apache Airflow (DAGs), Celery, Job Queuing & Prioritization, Concurrent Execution, "
-      "Kafka, Redis, Event-Driven Workflows")
-skill("Containerization & DevOps", "Docker, Kubernetes, Jenkins, CI/CD, Git, DVC, MLflow")
-skill("Distributed Processing & Performance", "Apache Spark, PySpark, Hadoop, Hive, ETL Pipelines, Profiling (cProfile), "
-      "Performance Metrics, Throughput Optimization")
-skill("Cloud & Databases", "AWS (S3, EC2, Lambda, Glue, RDS, SageMaker), Azure (Stream Analytics, Data Services), "
-      "MongoDB, Snowflake, Delta Lake")
-skill("ML & Analytics", "PyTorch, scikit-learn, HuggingFace Transformers, BERT/BioBERT, Optuna")
+skill("Programming & Scripting", "Python (pandas, NumPy, scikit-learn, PyTorch), Java, SQL (PostgreSQL, Oracle), R, Scala")
+skill("Web UI, APIs & Security", "FastAPI, RESTful Microservices, API Versioning, OAuth 2.0, Dashboard Design, "
+      "Tableau, Power BI, Data Visualization")
+skill("Job Scheduling & Orchestration", "Apache Airflow (DAGs), HPC Job Scheduling (ORC Hopper), Kafka, AWS SQS, "
+      "Event-Driven Workflows, CI/CD")
+skill("Containerization & DevOps", "Docker, Kubernetes, Jenkins, Git, DVC, MLflow")
+skill("Distributed Processing & Performance", "Apache Spark, PySpark, AWS EMR, Hadoop, Hive, Sqoop, ETL Pipelines, "
+      "Delta Lake, Performance Tuning, Optuna")
+skill("Cloud & Databases", "AWS (S3, EC2, Lambda, Glue, RDS, Athena, SageMaker), Azure (Stream Analytics, Data Services), "
+      "MongoDB, Snowflake, Databricks")
+skill("ML & NLP", "PyTorch, Core ML, TensorFlow, XGBoost, LightGBM, HuggingFace Transformers, BERT/BioBERT, Llama 3, SHAP")
 
 # ---------------- Education ----------------
 heading("EDUCATION")
@@ -151,46 +148,46 @@ for line in ["**Master’s in Data Analytics and Engineering** | George Mason Un
 heading("PROFESSIONAL EXPERIENCE")
 job("George Mason University", "UI/UX Developer", "Fairfax, VA | August 2024 – Present")
 for b in [
-    "Modernized the **UI architecture** of a multi-user research analytics platform through a full redesign in **React** and "
-    "**Python (FastAPI)**, improving **information hierarchy, usability, consistency, and layout** across functional modules "
-    "(data ingestion, job monitoring, results, and administration).",
-    "Designed and developed **modern, scalable web user interfaces** backed by a reusable **component library and design system**, "
-    "applying **responsive design** and **accessibility (WCAG)** standards and serving data to the UI with **sub-200ms latency**.",
-    "Enhanced **access control and authorization** by implementing **role-based access control (RBAC)** and token-based (**JWT**) "
-    "authentication on FastAPI endpoints, enforcing role- and project-level permissions for datasets, jobs, and results.",
-    "Built **job queuing and scheduling** for long-running compute jobs (NLP runs over **30K+ documents**) on the **ORC Hopper HPC "
-    "cluster**, supporting **concurrent execution, priority-based dispatching, and efficient resource allocation**.",
-    "Streamlined **end-to-end workflows** by identifying bottlenecks in data-preparation and training stages and **refactoring "
-    "orchestration logic**, standardizing **15GB** of data across 6 datasets and reducing preparation time by **30%**.",
-    "Analyzed **run-processing pipelines**, developed **performance metrics and statistics** (runtime, queue wait, throughput) with "
-    "**MLflow**, and applied optimization strategies that cut iteration cycles from **3 days to under 18 hours**.",
-    "Containerized platform services with **Docker** and automated delivery through **CI/CD pipelines**, reducing release cycles "
-    "from **2 weeks to 5 days** and enabling **A/B testing** of UI and backend changes.",
-    "Collaborated in **technical design discussions** and **code reviews** (Git, DVC), and authored **technical documentation** and "
-    "**engineering best practices**, reducing onboarding time for new contributors to **under 2 days**.",
+    "Designed and implemented a **multi-user research dashboard** backed by a **FastAPI** and **Docker** service, structuring "
+    "**information hierarchy and layout** across analysis views and serving results to users with **sub-200ms latency**.",
+    "Built **Tableau** visualizations and reports for disaster-response and social-cohesion research, improving **usability and "
+    "consistency** of how findings were presented to research stakeholders.",
+    "Scheduled and ran **long-running compute jobs** (graph analytics and ensemble forecasting) on the **ORC Hopper HPC cluster** "
+    "using **Python** and **R**, achieving an **RMSE of 0.89** on large-scale real-world datasets.",
+    "Analyzed and optimized **end-to-end processing pipelines** in **Python, PyTorch, and MLflow**, automating tuning with "
+    "**Optuna** to cut iteration cycles from **3 days to under 18 hours**.",
+    "Built a transformer-based **document-processing pipeline** (**BioBERT**, HuggingFace) over **30K documents**, improving "
+    "entity-recognition F1-score by **18%** and standardizing **15GB** across 6 datasets with **30%** less preparation time.",
+    "Engineered **distributed feature pipelines** on **Apache Spark** and **AWS EMR** for large-scale telemetry data with "
+    "**privacy-preserving data compliance**, and served on-device models at **sub-150ms latency** for millions of daily requests.",
+    "Streamlined deployment workflows with **MLflow** and **FastAPI**, reducing release cycles from **2 weeks to 5 days**, enabling "
+    "**A/B testing**, and shrinking model size by **40%** (LoRA, QAT) within **3%** of baseline accuracy.",
+    "Built a **LightGBM** anomaly-detection service with threshold-based alerting under **PCI-DSS** compliance, reducing false "
+    "positives by **25%**, with **SHAP**-based explainability for governance reviews.",
+    "Collaborated in **design discussions and code reviews** (Git, DVC) and authored **technical documentation** and "
+    "reproducibility standards, reducing onboarding time for new contributors to **under 2 days**.",
 ]:
     bullet(b)
 
-job("Carelon Global Solutions", "Python Developer (Client: Accenture)", "India | January 2019 – July 2023")
+job("Carelon Global Solutions", "Python Developer (Client: Accenture)", "India | January 2019 – August 2023")
 for b in [
-    "Designed and extended **access control and authorization** for enterprise **RESTful microservices** using **OAuth 2.0**, "
-    "role-based permissions, and **API versioning**, securing **HIPAA-compliant** data exchange for a U.S. healthcare client.",
-    "Enhanced **job scheduling and queuing** in **Apache Airflow**, configuring DAG priority weights, pools, and concurrency limits "
-    "to support **concurrent execution, prioritization, and efficient resource allocation**, reducing manual effort by **25%**.",
-    "Streamlined **end-to-end workflows** by identifying bottlenecks and **refactoring orchestration and dependency logic**, "
-    "improving coordination across ingestion, processing, and serving components and reducing project turnaround time by **15%**.",
-    "**Profiled and optimized long-running distributed workloads** by migrating from **Hive to Apache Spark/PySpark** and tuning "
-    "partitioning, caching, and executor resource allocation, significantly reducing processing time and increasing throughput.",
-    "Built scalable **distributed data-processing pipelines** using **PySpark** and **AWS (S3, Glue, SageMaker)** with **Delta "
-    "Lake**, improving data reliability by **30%** across ingestion and processing stages.",
-    "Developed **performance metrics and statistics** dashboards using **Azure Stream Analytics** and **Power BI** to monitor "
-    "pipeline throughput and system health, reducing unplanned downtime by **20%**.",
-    "Containerized and orchestrated Python services using **Docker** and **Kubernetes** with **Jenkins CI/CD**, improving system "
-    "uptime by **20%** and enabling real-time EHR integration via **REST APIs**.",
-    "Developed high-throughput **Python/Java** services, including **BERT/BioBERT** clinical entity extraction (**80% accuracy**, "
-    "**55%** faster processing) and fault-tolerant **MongoDB** data models for unstructured data.",
-    "Collaborated with engineering, product, and **Accenture** client teams in **technical design discussions** and **code "
-    "reviews**, and contributed **technical documentation** and engineering best practices.",
+    "Developed **RESTful microservices** with **OAuth 2.0** authorization and **API versioning** for secure enterprise system "
+    "communication, supporting **HIPAA-compliant** data exchange and real-time **EHR integration**.",
+    "Designed and optimized **20+ data pipelines** for provider and consumer analytics, orchestrated with **Apache Airflow DAGs** "
+    "and **CI/CD** on **AWS**, scheduling ingestion, feature engineering, and retraining jobs and reducing manual effort by **25%**.",
+    "Streamlined **end-to-end ingestion workflows** by building **Python** automation for **NPPES** provider data, improving "
+    "data accuracy by **74%** and reducing processing overhead in claims-balancing workflows.",
+    "**Profiled and optimized** large-scale processing by migrating from **Hive to Apache Spark/PySpark** and re-engineering "
+    "**SQL** feature pipelines, boosting model-training efficiency by **60%** and cutting preprocessing overhead by **70%**.",
+    "Built scalable **distributed ETL pipelines** with **PySpark, AWS (S3, Glue, SageMaker)**, and **Delta Lake**, and web crawlers "
+    "that structured **400,000+** XML/JSON documents, improving data reliability by **30%**.",
+    "Containerized and deployed Python services using **Docker, Kubernetes, and Jenkins CI/CD**, improving system uptime by **20%**.",
+    "Developed **Tableau** and **Power BI** dashboards and a real-time **Azure Stream Analytics** pipeline surfacing **performance "
+    "metrics** and anomalies for IoT sensor data, reducing unplanned downtime by **20%**.",
+    "Delivered **BERT/BioBERT** clinical entity extraction (**80% accuracy**, **55%** faster processing) and rule-based invoice "
+    "classification that reduced manual error rates by **70%**; designed **MongoDB** models for high-throughput sensor data.",
+    "Collaborated with cross-functional teams and **Accenture** client stakeholders on the **Seven Plus Locations** project through "
+    "**technical design discussions and code reviews**, reducing project turnaround time by **15%**.",
 ]:
     bullet(b)
 

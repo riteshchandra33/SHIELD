@@ -62,9 +62,10 @@ def heading(text):
     bottom_border(p)
 
 
-def bullet(text, after=2):
+def bullet(text, after=3, spacing=1.0):
     p = doc.add_paragraph()
     pf = p.paragraph_format
+    pf.line_spacing = spacing
     pf.left_indent = Inches(0.25)
     pf.first_line_indent = Inches(-0.25)
     pf.tab_stops.add_tab_stop(Inches(0.25))
@@ -75,7 +76,7 @@ def bullet(text, after=2):
 
 def skill(label, text):
     p = doc.add_paragraph()
-    p.paragraph_format.space_after = Pt(1)
+    p.paragraph_format.space_after = Pt(2)
     runs(p, f"**{label}:** {text}")
 
 
@@ -103,13 +104,13 @@ for i, (txt, link) in enumerate([("somashekarritesh@gmail.com", True), (" | (571
 heading("PROFESSIONAL SUMMARY")
 bullet("**AI/ML Systems Engineer** with **6+ years of experience** building, **testing, and validating** end-to-end **AI/ML, "
        "Generative AI, RAG, NLP, and data platforms**, including **3+ years of cloud AI** on **AWS (SageMaker, Bedrock)** and "
-       "**Azure OpenAI**, with deep expertise in **Python, SQL (Oracle), PySpark, Kafka, LangChain, and LlamaIndex**.", 4)
+       "**Azure OpenAI**, with deep expertise in **Python, SQL (Oracle), PySpark, Kafka, LangChain, and LlamaIndex**.", 3, 1.15)
 bullet("Proven impact in AI quality, including improving **RAG recall from 61% to 88%**, **reducing LLM hallucination rate by 19%**, "
        "sustaining **95%+ production model accuracy** through drift detection, and **cutting reporting errors by 40%** with automated "
-       "data quality frameworks.", 4)
+       "data quality frameworks.", 3, 1.15)
 bullet("Specialized in **test strategy for non-deterministic Gen AI systems** (accuracy, relevance, faithfulness, safety, and bias), "
        "**BDD (Cucumber/Gherkin), Selenium, Pytest**, API and system testing, and **LLM evaluation frameworks (RAGAS, DeepEval)**; "
-       "experienced in **Agile** delivery with **Jira and Confluence**, communicating findings to technical and business stakeholders.", 4)
+       "experienced in **Agile** delivery with **Jira and Confluence**, communicating findings to technical and business stakeholders.", 3, 1.15)
 
 # ---------------- Skills ----------------
 heading("TECHNICAL SKILLS")
@@ -199,11 +200,14 @@ for b in [
 
 # ---------------- Education ----------------
 heading("EDUCATION")
-for line in ["**Master’s in Data Analytics and Engineering** | George Mason University, Fairfax, VA, USA.",
-             "**Bachelor’s in Information Science and Engineering** | Visvesvaraya Technological University, Bengaluru, Karnataka, India."]:
-    p = doc.add_paragraph()
-    p.paragraph_format.space_after = Pt(2)
-    runs(p, line)
+for degree, school in [("Master’s in Data Analytics and Engineering,", "George Mason University - Fairfax, VA, USA."),
+                       ("Bachelor’s in Information Science and Engineering,",
+                        "Visvesvaraya Technological University - Bengaluru, Karnataka, India.")]:
+    for text, bold in ((degree, True), (school, False)):
+        p = doc.add_paragraph()
+        p.paragraph_format.line_spacing = 1.15
+        r = p.add_run(text)
+        r.bold = bold
 
 doc.core_properties.author = "Ritesh Somashekar"
 doc.save(OUT)

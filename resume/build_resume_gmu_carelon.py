@@ -134,24 +134,25 @@ hyperlink(p, LINKEDIN, "LinkedIn", 11)
 
 # ---------------- Summary ----------------
 heading("PROFESSIONAL SUMMARY")
-bullet("**AI & Machine Learning Engineer** with **5+ years** of experience building **LLM and RAG systems**, **NLP models**, and "
-       "**enterprise data pipelines** across healthcare and public-safety domains. Published researcher (**ACM WSDM '26**, **IEEE PST 2026**) with "
-       "hands-on expertise in **Llama 3, ChromaDB, Hugging Face, PyTorch, and Scikit-learn**, and in **hallucination detection, "
-       "ontology-based validation, and LLM evaluation**.")
+bullet("**AI & Machine Learning Engineer** with **5+ years** of experience progressing from **data engineering** to **machine "
+       "learning** and **Generative AI**, building **production RAG systems**, **LLM applications**, and **enterprise data pipelines** "
+       "across healthcare and public safety. Published researcher (**ACM WSDM '26**, **IEEE PST 2026**) with hands-on expertise in "
+       "**Llama 3, LlamaIndex, ChromaDB, pgvector, FAISS, Hugging Face, and PyTorch**.")
 bullet("Strong background in **data engineering** with **Apache Airflow, Spark/PySpark, Snowflake, and Databricks**, and **cloud "
        "pipelines on AWS (S3, Lambda, Athena, Glue, SageMaker)** and **Azure**, with a focus on **HIPAA-compliant** healthcare data. "
        "Experienced in **MLOps** using **MLflow, Docker, Kubernetes, FastAPI,** and **CI/CD pipelines**.")
-bullet("Demonstrated impact, including a **0.81 protocol F1 with a 3.0% hallucination rate** for RAG-generated scenarios, **99.9% "
+bullet("Demonstrated impact, including **RAG recall@10 raised from 61% to 88%**, a **0.81 protocol F1 with a 3.0% hallucination rate**, **99.9% "
        "pipeline reliability**, **74% higher data accuracy**, and **60% faster model training**. Adept at collaborating with "
        "researchers, public agencies, and business stakeholders to deliver **end-to-end AI solutions** from research to production.")
 
 # ---------------- Skills ----------------
 heading("TECHNICAL SKILLS")
 skill("Programming & Scripting", "Python (NumPy, pandas, scikit-learn, PyTorch, TensorFlow), SQL, R, Scala, Java, Bash")
-skill("Generative AI & LLMs", "Llama 3/3.1, Ollama, Retrieval-Augmented Generation (RAG), Prompt Engineering, Agentic AI, "
-      "Vector Databases (ChromaDB, FAISS), Sentence Transformers, LoRA, Quantization-Aware Training (QAT)")
-skill("LLM Evaluation & Safety", "Hallucination Detection, Ontology-Based Validation, NLI-Based Validation, Semantic Similarity "
-      "Scoring, Ablation Studies, Protocol F1, Confidence Scoring")
+skill("RAG & Generative AI", "Retrieval-Augmented Generation (RAG), Chunking, Embeddings (Sentence Transformers, all-mpnet-base-v2), "
+      "Metadata Filtering, Top-K Retrieval, Context Assembly, Grounding, LlamaIndex, Vector Databases (ChromaDB, pgvector, FAISS), "
+      "Llama 3/3.1, Ollama, Prompt Engineering, Agentic AI, LoRA/PEFT, Quantization-Aware Training (QAT)")
+skill("LLM Evaluation & Safety", "RAGAS, Recall@K, Faithfulness, Hallucination Detection, Guardrails, Ontology-Based Validation, "
+      "NLI-Based Validation, Semantic Similarity Scoring, Ablation Studies, Protocol F1, Confidence Scoring")
 skill("Machine Learning & NLP", "Supervised & Unsupervised Learning, Transformers, BERT, BioBERT, Hugging Face, XGBoost, LightGBM, "
       "Graph Analytics, Ensemble Models, Time Series Forecasting, Anomaly Detection, Feature Engineering, Model Explainability (SHAP)")
 skill("MLOps & ML Infrastructure", "MLflow, Docker, Kubernetes, Jenkins, CI/CD, FastAPI, Git, DVC, Model Deployment")
@@ -173,33 +174,37 @@ for line in ["**Master's in Data Analytics and Engineering** | George Mason Univ
 heading("PROFESSIONAL EXPERIENCE")
 job("George Mason University", "AI & ML Research Associate", "Fairfax, VA | August 2024 - Present")
 for b in [
-    "Co-developed **SHIELD**, an online conversational AI training platform for 9-1-1 call-takers built with **Fairfax County "
-    "DPSC**, using **LLM agents** to generate call scenarios from CAD data, deliver **real-time metacognitive nudges**, and produce "
-    "post-call reflection analytics; published at **ACM WSDM '26**.",
-    "**Led the data pipeline for both SHIELD and MATE-911** in **Python**, covering OCR parsing, abbreviation expansion, "
-    "completeness checks, segmentation, standardization, and **ChromaDB** embedding of **160 gold-standard emergency scenarios** "
-    "across accident, fire, medical, and alarm incidents.",
-    "**Led the validation layer for both platforms**, building a **911 ontology validator** derived from **NENA** standards and "
-    "DPSC procedures that combines rule-based and **LLM-based semantic checks** for unsafe content, protocol compliance, and "
-    "**hallucination detection**, with PASS/REVIEW/FAIL confidence scoring and an **85% cosine-similarity** quality gate.",
-    "Co-developed **MATE-911** (published at **IEEE PST 2026**), a multimodal **RAG** system using **Llama 3.1 8B (Ollama)**, **ChromaDB**, and **all-mpnet-base-v2** "
-    "embeddings to generate protocol-grounded voice and text scenarios on commodity hardware, achieving **0.81 protocol F1**, a "
-    "**3.0% hallucination rate**, a **97.6% pass rate**, and **sub-2-second latency**.",
-    "Ran **ablation studies** showing RAG retrieval drives scenario quality (**F1 0.81 vs. 0.59** without it) and ontology "
-    "validation acts as a safety guardrail, cutting hallucinations from **9.5% to 3.0%**.",
-    "Built real-time **trace-log analytics** (event streams, Task Completion Rate, Average Field Latency, goal-alignment scoring) "
-    "that feed an instructor **performance dashboard** for adaptive feedback.",
+    "Co-developed **SHIELD** (published at **ACM WSDM '26**), an online conversational AI training platform for 9-1-1 call-takers "
+    "built with **Fairfax County DPSC**, using **LLM agents** to generate call scenarios from CAD data, deliver **real-time "
+    "metacognitive nudges**, and produce post-call reflection analytics.",
+    "Co-developed **MATE-911** (published at **IEEE PST 2026**), a multimodal **RAG** system that grounds **Llama 3.1 8B** generation "
+    "in validated emergency-response knowledge, producing protocol-compliant voice and text scenarios on commodity hardware with "
+    "**0.81 protocol F1**, a **3.0% hallucination rate**, and a **97.6% pass rate**, with no commercial API dependency.",
+    "**Led the RAG knowledge-base and data pipeline for both platforms** in **Python**, covering OCR parsing, abbreviation expansion, "
+    "completeness checks, segmentation, and standardization of **160 gold-standard scenarios**; the curated knowledge base cut "
+    "hallucinations from **13.0% to 3.0%**.",
+    "Built the **retrieval layer** with **all-mpnet-base-v2** (768-dim) embeddings in a **ChromaDB HNSW cosine index**, attaching "
+    "metadata (category, severity, tags, confidence) for **filtered top-K retrieval** and a **70% similarity relevance gate**.",
+    "Engineered **prompt and context assembly** to ground **Llama 3.1 8B (Ollama)** responses in retrieved scenarios, tuning "
+    "temperature, token budgets, and context windows to reach **960 ms (text)** and **1.3 s (voice)** mean latency, with fallback "
+    "generation for resilience.",
+    "**Led the validation layer for both platforms**, building **RAG guardrails** with a **911 ontology validator** (NENA standards, "
+    "DPSC procedures), rule-based and **LLM-based semantic checks**, **NLI-based hallucination detection**, PASS/REVIEW/FAIL "
+    "confidence scoring, and an **85% cosine-similarity** quality gate.",
+    "Ran **RAG ablation studies** showing retrieval drives quality (**F1 0.81 vs. 0.59** and **97.6% vs. 49.7%** pass rate without "
+    "it), while ontology validation acts as a safety guardrail that cuts hallucinations from **9.5% to 3.0%**.",
+    "Developed a **RAG research assistant** with **LlamaIndex**, **pgvector**, and **FAISS**, optimizing chunking, embeddings, "
+    "retrieval, and context assembly to raise **recall@10 from 61% to 88%**, evaluated with **RAGAS** (faithfulness, answer "
+    "relevance, context precision) and served to **40+ researchers** at about **190 ms p95** latency.",
     "Applied **graph-based analytics** and **ensemble models** to large-scale disaster datasets on the **ORC Hopper HPC cluster** to "
     "forecast community coping trends with an **RMSE of 0.89**, visualizing findings in **R** and **Tableau**.",
     "Implemented **model explainability** using **SHAP** for **intent classification** and **behavioral anomaly detection** models, "
-    "surfacing the features driving each prediction to guide threshold tuning and model governance; the **LightGBM** anomaly "
-    "detector with threshold-based alerting reduced false positives by **25%**.",
+    "guiding threshold tuning and model governance; the **LightGBM** anomaly detector reduced false positives by **25%**.",
     "Fine-tuned **Llama 3** and transformer models using **LoRA/PEFT** and **Quantization-Aware Training (QAT)**, reducing model "
     "size by **40%** while keeping accuracy within **3%** of full-precision benchmarks.",
-    "Established **MLflow** experiment tracking and model registry for LLM and RAG experiments, logging parameters, prompts, and "
-    "evaluation metrics to make every run reproducible and comparable across model versions.",
-    "Took models from **proof of concept to production** by serving them through **FastAPI** and **Docker** with **CI/CD**, reducing "
-    "release cycles from **2 weeks to 5 days** and enabling **A/B testing** and pre/post-deployment evaluation of model versions.",
+    "Took models and RAG services from **proof of concept to production** with **MLflow** experiment tracking and model registry, "
+    "**FastAPI**, **Docker**, and **CI/CD**, reducing release cycles from **2 weeks to 5 days** and enabling **A/B testing** of "
+    "model and prompt versions.",
 ]:
     bullet(b)
 
@@ -220,8 +225,6 @@ for b in [
     "**HIPAA**, and improved **Scikit-learn/XGBoost** models, increasing accuracy by **8%** and cutting training time by **15%**.",
     "Containerized ML inference services with **Docker, Kubernetes,** and **Jenkins CI/CD**, improving system uptime by **20%** "
     "and enabling real-time EHR integration via **REST APIs**.",
-    "Delivered self-service BI pipelines integrating **Tableau, Power BI,** and SQL-based models, reducing reporting latency by "
-    "**40%** and enabling anomaly detection for healthcare analytics.",
 ]:
     bullet(b)
 
@@ -229,9 +232,8 @@ job("Carelon Global Solutions (Elevance Health)", "Data Engineer", "Bengaluru, I
 for b in [
     "Partnered with stakeholders on the **Seven Plus Locations** project to align ETL pipelines with business KPIs, improving "
     "claims data accuracy and driving cost savings.",
-    "Redesigned **claims-balancing ETL workflows**, improving provider insights and reducing operational overhead by **60%**.",
-    "Automated **medical invoice processing** pipelines, cutting manual errors by **70%** and improving the reliability of "
-    "financial reporting.",
+    "Redesigned **claims-balancing ETL workflows** and automated **medical invoice processing** pipelines, reducing operational "
+    "overhead by **60%** and manual errors by **70%**.",
     "Migrated large-scale processing workloads from **Hive** to **Apache Spark/PySpark**, and moved **Sqoop/Hadoop** ingestion to "
     "**Azure Data Services**, improving performance, scalability, and pipeline efficiency.",
     "Developed **RESTful microservices** with **OAuth 2.0** and API versioning, and designed **MongoDB** data models with "

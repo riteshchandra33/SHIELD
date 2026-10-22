@@ -130,7 +130,7 @@ p.alignment = WD_ALIGN_PARAGRAPH.CENTER
 p.add_run("Fairfax, VA | (571) 245-7770 | ").font.size = Pt(11)
 hyperlink(p, "mailto:ritesh.chandra33@gmail.com", "ritesh.chandra33@gmail.com", 11)
 p.add_run(" | ").font.size = Pt(11)
-hyperlink(p, LINKEDIN, "linkedin.com/in/ritesh-somashekar-0497aa182", 11)
+hyperlink(p, LINKEDIN, "LinkedIn", 11)
 
 # ---------------- Summary ----------------
 heading("PROFESSIONAL SUMMARY")

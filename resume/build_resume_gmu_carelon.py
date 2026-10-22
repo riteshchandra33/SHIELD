@@ -113,7 +113,7 @@ p.add_run(" | LinkedIn").font.size = Pt(12)
 # ---------------- Summary ----------------
 heading("PROFESSIONAL SUMMARY")
 bullet("**AI & Machine Learning Engineer** with **5+ years** of experience building **LLM and RAG systems**, **NLP models**, and "
-       "**enterprise data pipelines** across healthcare and public-safety domains. Published researcher (**ACM WSDM ’26**, **IEEE PST 2026**) with "
+       "**enterprise data pipelines** across healthcare and public-safety domains. Published researcher (**ACM WSDM '26**, **IEEE PST 2026**) with "
        "hands-on expertise in **Llama 3, ChromaDB, Hugging Face, PyTorch, and Scikit-learn**, and in **hallucination detection, "
        "ontology-based validation, and LLM evaluation**.")
 bullet("Strong background in **data engineering** with **Apache Airflow, Spark/PySpark, Snowflake, and Databricks**, and **cloud "
@@ -140,8 +140,8 @@ skill("Data Analysis & Visualization", "Tableau, Power BI (DAX), Excel (VBA, For
 
 # ---------------- Education ----------------
 heading("EDUCATION")
-for line in ["**Master’s in Data Analytics and Engineering** | George Mason University, Fairfax, VA, USA | GPA: 3.93/4.0",
-             "**Bachelor’s in Information Science and Engineering** | Visvesvaraya Technological University, Bengaluru, Karnataka, India."]:
+for line in ["**Master's in Data Analytics and Engineering** | George Mason University, Fairfax, VA, USA | May 2025 | GPA: 3.93/4.0",
+             "**Bachelor's in Information Science and Engineering** | Visvesvaraya Technological University, Bengaluru, Karnataka, India."]:
     p = doc.add_paragraph()
     p.paragraph_format.left_indent = Inches(0.1)
     p.paragraph_format.space_after = Pt(3)
@@ -149,11 +149,11 @@ for line in ["**Master’s in Data Analytics and Engineering** | George Mason Un
 
 # ---------------- Experience ----------------
 heading("PROFESSIONAL EXPERIENCE")
-job("George Mason University", "Graduate Research Assistant (AI/ML)", "Fairfax, VA | August 2024 – Present")
+job("George Mason University", "AI & ML Research Associate", "Fairfax, VA | August 2024 - Present")
 for b in [
     "Co-developed **SHIELD**, an online conversational AI training platform for 9-1-1 call-takers built with **Fairfax County "
     "DPSC**, using **LLM agents** to generate call scenarios from CAD data, deliver **real-time metacognitive nudges**, and produce "
-    "post-call reflection analytics; published at **ACM WSDM ’26**.",
+    "post-call reflection analytics; published at **ACM WSDM '26**.",
     "**Led the data pipeline for both SHIELD and MATE-911** in **Python**, covering OCR parsing, abbreviation expansion, "
     "completeness checks, segmentation, standardization, and **ChromaDB** embedding of **160 gold-standard emergency scenarios** "
     "across accident, fire, medical, and alarm incidents.",
@@ -181,8 +181,8 @@ for b in [
 ]:
     bullet(b)
 
-job("Carelon Global Solutions (Elevance Health)", "Data Engineer",
-    "Bengaluru, India | May 2022 – August 2023")
+job("Carelon Global Solutions (Elevance Health)", "Machine Learning Engineer",
+    "Bengaluru, India | May 2022 - August 2023")
 for b in [
     "Designed and managed **20+ enterprise ETL pipelines**, boosting data throughput by **70%** and ensuring high availability for "
     "downstream AI/BI applications.",
@@ -203,7 +203,7 @@ for b in [
 ]:
     bullet(b)
 
-job("Carelon Global Solutions (Elevance Health)", "Associate Data Analyst", "Bengaluru, India | October 2020 – April 2022")
+job("Carelon Global Solutions (Elevance Health)", "Data Engineer", "Bengaluru, India | October 2020 - April 2022")
 for b in [
     "Partnered with stakeholders on the **Seven Plus Locations** project to align ETL pipelines with business KPIs, improving "
     "claims data accuracy and driving cost savings.",
@@ -220,14 +220,15 @@ for b in [
 # ---------------- Publications ----------------
 heading("PUBLICATIONS")
 for pub in [
-    "R. S. Nayaka, **R. Somashekar**, K. B. Laskey, L. Wells II, and H. Purohit. “SHIELD: A Framework for Online Conversational AI "
-    "System for Self-Regulated Learning at Emergency Communications Centers.” In *Proceedings of the 19th ACM International "
-    "Conference on Web Search and Data Mining (WSDM ’26)*, Boise, ID, 2026. doi:10.1145/3773966.3779411",
-    "R. S. Nayaka, **R. Somashekar**, and H. Purohit. “MATE-911: Multimodal AI-powered Training Environment for Next-Generation "
-    "911 Dispatcher Preparedness.” In *IEEE PST Conference*, 2026.",
+    "R. S. Nayaka, **R. Somashekar**, K. B. Laskey, L. Wells II, and H. Purohit. \"SHIELD: A Framework for Online Conversational AI "
+    "System for Self-Regulated Learning at Emergency Communications Centers.\" In *Proceedings of the 19th ACM International "
+    "Conference on Web Search and Data Mining (WSDM '26)*, Boise, ID, 2026. doi:10.1145/3773966.3779411",
+    "R. S. Nayaka, **R. Somashekar**, and H. Purohit. \"MATE-911: Multimodal AI-powered Training Environment for Next-Generation "
+    "911 Dispatcher Preparedness.\" In *IEEE PST Conference*, 2026.",
 ]:
     bullet(pub)
 
 doc.core_properties.author = "Ritesh Somashekar"
+doc.core_properties.title = "Ritesh Somashekar - AI & ML Engineer Resume"
 doc.save(OUT)
 print("saved", OUT)

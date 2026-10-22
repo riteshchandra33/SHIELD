@@ -137,15 +137,15 @@ heading("PROFESSIONAL SUMMARY")
 bullet("**AI & ML Engineer** with **5+ years** of experience growing from **data engineering** to **machine learning** and "
        "**Generative AI**, now building **RAG systems** and **LLM applications**; published at **ACM WSDM '26** and **IEEE PST 2026**.")
 bullet("Built healthcare data and ML pipelines at **Carelon Global Solutions**, then led RAG data, retrieval, and validation work at "
-       "**George Mason University** using **Python, Llama 3, LlamaIndex, ChromaDB, PyTorch,** and **AWS**.")
+       "**George Mason University** using **Python, LangChain, LlamaIndex, Llama 3, ChromaDB, PyTorch,** and **AWS**.")
 bullet("Proven results: **RAG recall@10 raised from 61% to 88%**, a **3.0% LLM hallucination rate**, **99.9% pipeline reliability**, "
        "and **60% faster model training**.")
 
 # ---------------- Skills ----------------
 heading("TECHNICAL SKILLS")
 skill("Programming", "Python, SQL, R, Java")
-skill("Generative AI & RAG", "Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), LlamaIndex, Prompt Engineering, "
-      "Embeddings, Vector Databases (ChromaDB, pgvector, FAISS), Llama 3, Ollama, Agentic AI, LoRA/PEFT")
+skill("Generative AI & RAG", "LLMs, Retrieval-Augmented Generation (RAG), LangChain, LlamaIndex, Prompt Engineering, Embeddings, "
+      "Vector Databases (ChromaDB, Pinecone, pgvector, FAISS), GPT-4, Azure OpenAI, Llama 3, Ollama, Agentic AI, LoRA/PEFT")
 skill("LLM Evaluation", "RAGAS, Recall@K, Hallucination Detection, Guardrails, Ablation Studies, A/B Testing")
 skill("Machine Learning & NLP", "PyTorch, TensorFlow, Scikit-learn, Hugging Face Transformers, BERT, XGBoost, LightGBM, SHAP, "
       "Anomaly Detection, Time Series Forecasting")
@@ -181,6 +181,8 @@ for b in [
     "hallucination checks** against NENA protocols, lowering hallucinations from **9.5% to 3.0%**.",
     "To speed up literature search, built a **RAG research assistant** with **LlamaIndex, pgvector,** and **FAISS**, raising "
     "**recall@10 from 61% to 88%** (RAGAS-evaluated) for **40+ researchers** at **190 ms p95** latency.",
+    "To improve answer accuracy across LLM providers, built **LangChain** RAG pipelines with **FAISS** grounding **GPT-4, Claude,** "
+    "and **Gemini** in verified sources, raising accuracy by **16%** and cutting hallucinations by **19%**.",
     "To make model decisions explainable, applied **SHAP** to intent classification and behavioral **anomaly detection** models, "
     "tuning **LightGBM** alert thresholds to cut false positives by **25%**.",
     "To run LLMs on limited hardware, fine-tuned **Llama 3** with **LoRA/PEFT** and **quantization-aware training**, shrinking "
@@ -196,6 +198,8 @@ job("Carelon Global Solutions (Elevance Health)", "Machine Learning Engineer", "
 for b in [
     "To automate clinical text review, built **BERT/BioBERT** entity-extraction models on unstructured medical notes, reaching "
     "**80% accuracy** and cutting processing time by **55%**.",
+    "To speed up member support, built a **Generative AI** assistant with **Azure OpenAI**, **LangChain**, and **Pinecone** RAG for "
+    "**15K+ daily queries**, cutting resolution time by **38%** and raising ticket deflection by **25%**.",
     "To improve prediction quality, tuned **Scikit-learn** and **XGBoost** models through feature engineering and hyperparameter "
     "search, raising accuracy by **8%** and cutting training time by **15%**.",
     "To serve models reliably, containerized inference services with **Docker, Kubernetes,** and **Jenkins CI/CD**, improving "

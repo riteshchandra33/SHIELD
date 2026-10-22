@@ -168,8 +168,12 @@ for b in [
     "that feed an instructor **performance dashboard** for adaptive feedback.",
     "Applied **graph-based analytics** and **ensemble models** to large-scale disaster datasets on the **ORC Hopper HPC cluster** to "
     "forecast community coping trends with an **RMSE of 0.89**, visualizing findings in **R** and **Tableau**.",
-    "Fine-tuned **Llama 3** models using **LoRA** and **Quantization-Aware Training (QAT)**, reducing model size by **40%** within "
-    "**3%** of full-precision accuracy, with experiments tracked in **MLflow** and models served via **FastAPI** and **Docker**.",
+    "Fine-tuned **Llama 3** and transformer models using **LoRA/PEFT** and **Quantization-Aware Training (QAT)**, reducing model "
+    "size by **40%** while keeping accuracy within **3%** of full-precision benchmarks.",
+    "Established **MLflow** experiment tracking and model registry for LLM and RAG experiments, logging parameters, prompts, and "
+    "evaluation metrics to make every run reproducible and comparable across model versions.",
+    "Took models from **proof of concept to production** by serving them through **FastAPI** and **Docker** with **CI/CD**, reducing "
+    "release cycles from **2 weeks to 5 days** and enabling **A/B testing** and pre/post-deployment evaluation of model versions.",
 ]:
     bullet(b)
 

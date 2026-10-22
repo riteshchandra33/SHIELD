@@ -102,13 +102,35 @@ def job(company, role, right):
 # ---------------- Header ----------------
 centered("Ritesh Somashekar", 18)
 centered("AI & ML Engineer", 14)
+LINKEDIN = "https://www.linkedin.com/in/ritesh-somashekar-0497aa182/"
+
+
+def hyperlink(p, url, text, size):
+    """Add a clickable link whose visible text stays readable to ATS parsers."""
+    rid = p.part.relate_to(url, "http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink",
+                           is_external=True)
+    h = OxmlElement("w:hyperlink")
+    h.set(qn("r:id"), rid)
+    r = OxmlElement("w:r")
+    rpr = OxmlElement("w:rPr")
+    for tag, val in (("w:color", "0563C1"), ("w:u", "single"), ("w:sz", str(size * 2))):
+        e = OxmlElement(tag)
+        e.set(qn("w:val"), val)
+        rpr.append(e)
+    r.append(rpr)
+    t = OxmlElement("w:t")
+    t.text = text
+    r.append(t)
+    h.append(r)
+    p._p.append(h)
+
+
 p = doc.add_paragraph()
 p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-p.add_run("Fairfax, VA | (571) 245-7770 | ").font.size = Pt(12)
-r = p.add_run("ritesh.chandra33@gmail.com")
-r.font.size, r.font.underline = Pt(12), True
-r.font.color.rgb = RGBColor(0x05, 0x63, 0xC1)
-p.add_run(" | LinkedIn").font.size = Pt(12)
+p.add_run("Fairfax, VA | (571) 245-7770 | ").font.size = Pt(11)
+hyperlink(p, "mailto:ritesh.chandra33@gmail.com", "ritesh.chandra33@gmail.com", 11)
+p.add_run(" | ").font.size = Pt(11)
+hyperlink(p, LINKEDIN, "linkedin.com/in/ritesh-somashekar-0497aa182", 11)
 
 # ---------------- Summary ----------------
 heading("PROFESSIONAL SUMMARY")
@@ -140,7 +162,7 @@ skill("Data Analysis & Visualization", "Tableau, Power BI (DAX), Excel (VBA, For
 
 # ---------------- Education ----------------
 heading("EDUCATION")
-for line in ["**Master's in Data Analytics and Engineering** | George Mason University, Fairfax, VA, USA | May 2025 | GPA: 3.93/4.0",
+for line in ["**Master's in Data Analytics and Engineering** | George Mason University, Fairfax, VA, USA | GPA: 3.93/4.0",
              "**Bachelor's in Information Science and Engineering** | Visvesvaraya Technological University, Bengaluru, Karnataka, India."]:
     p = doc.add_paragraph()
     p.paragraph_format.left_indent = Inches(0.1)

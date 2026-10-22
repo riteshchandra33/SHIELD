@@ -134,99 +134,91 @@ hyperlink(p, LINKEDIN, "LinkedIn", 11)
 
 # ---------------- Summary ----------------
 heading("PROFESSIONAL SUMMARY")
-bullet("**AI & Machine Learning Engineer** with **5+ years** progressing from **data engineering** to **machine learning** and "
-       "**Generative AI**, building **production RAG systems** and **LLM applications**; published at **ACM WSDM '26** and **IEEE PST 2026**.")
-bullet("Skilled in **Llama 3, LlamaIndex, ChromaDB, pgvector, PyTorch, Airflow, Spark,** and **Snowflake** on **AWS** and **Azure**, with "
-       "**MLOps** via **MLflow, Docker, Kubernetes, FastAPI,** and **CI/CD** for **HIPAA-compliant** data.")
-bullet("Demonstrated impact, including **RAG recall@10 raised from 61% to 88%**, a **0.81 protocol F1 with a 3.0% hallucination "
-       "rate**, **99.9% pipeline reliability**, and **60% faster model training**, delivering **end-to-end AI solutions** from "
-       "research to production.")
+bullet("**AI & ML Engineer** with **5+ years** of experience growing from **data engineering** to **machine learning** and "
+       "**Generative AI**, now building **RAG systems** and **LLM applications**; published at **ACM WSDM '26** and **IEEE PST 2026**.")
+bullet("Built healthcare data and ML pipelines at **Carelon Global Solutions**, then led RAG data, retrieval, and validation work at "
+       "**George Mason University** using **Python, Llama 3, LlamaIndex, ChromaDB, PyTorch,** and **AWS**.")
+bullet("Proven results: **RAG recall@10 raised from 61% to 88%**, a **3.0% LLM hallucination rate**, **99.9% pipeline reliability**, "
+       "and **60% faster model training**.")
 
 # ---------------- Skills ----------------
 heading("TECHNICAL SKILLS")
-skill("Programming & Scripting", "Python (NumPy, pandas, scikit-learn, PyTorch, TensorFlow), SQL, R, Scala, Java, Bash")
-skill("RAG & Generative AI", "RAG, Chunking, Embeddings (all-mpnet-base-v2), Metadata Filtering, Top-K Retrieval, Context Assembly, "
-      "LlamaIndex, ChromaDB, pgvector, FAISS, Llama 3/3.1, Ollama, Prompt Engineering, Agentic AI, LoRA/PEFT, QAT")
-skill("LLM Evaluation & Safety", "RAGAS, Recall@K, Faithfulness, Hallucination Detection, Guardrails, Ontology-Based Validation, "
-      "NLI-Based Validation, Semantic Similarity Scoring, Ablation Studies, Protocol F1, Confidence Scoring")
-skill("Machine Learning & NLP", "Transformers, BERT, BioBERT, Hugging Face, XGBoost, LightGBM, Graph Analytics, Ensemble Models, "
-      "Time Series Forecasting, Anomaly Detection, Feature Engineering, SHAP")
-skill("MLOps & ML Infrastructure", "MLflow, Docker, Kubernetes, Jenkins, CI/CD, FastAPI, Git, DVC, Model Deployment")
-skill("Data Engineering & Big Data", "Apache Airflow, Apache Spark, PySpark, Kafka, Databricks, Snowflake, Delta Lake, Hadoop, Hive, "
-      "Sqoop, Informatica PowerCenter, Precisely Data360, SQL Server, MySQL, MongoDB")
-skill("Cloud & Visualization", "AWS (S3, Lambda, Athena, Glue, SageMaker, SQS), Azure (Data Services, Stream Analytics), Tableau, "
-      "Power BI (DAX), Excel (VBA)")
+skill("Programming", "Python, SQL, R, Java")
+skill("Generative AI & RAG", "Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), LlamaIndex, Prompt Engineering, "
+      "Embeddings, Vector Databases (ChromaDB, pgvector, FAISS), Llama 3, Ollama, Agentic AI, LoRA/PEFT")
+skill("LLM Evaluation", "RAGAS, Recall@K, Hallucination Detection, Guardrails, Ablation Studies, A/B Testing")
+skill("Machine Learning & NLP", "PyTorch, TensorFlow, Scikit-learn, Hugging Face Transformers, BERT, XGBoost, LightGBM, SHAP, "
+      "Anomaly Detection, Time Series Forecasting")
+skill("MLOps", "MLflow, Docker, Kubernetes, FastAPI, CI/CD (Jenkins), Git, DVC")
+skill("Data Engineering", "Apache Airflow, Apache Spark, PySpark, Kafka, Databricks, Snowflake, Delta Lake, Hadoop, SQL Server, MongoDB")
+skill("Cloud & BI", "AWS (S3, Lambda, Glue, SageMaker, SQS), Azure, Tableau, Power BI")
 
 # ---------------- Education ----------------
 heading("EDUCATION")
 for line in ["**Master's in Data Analytics and Engineering** | George Mason University, Fairfax, VA, USA | GPA: 3.93/4.0",
-             "**Bachelor's in Information Science and Engineering** | Visvesvaraya Technological University, Bengaluru, Karnataka, India."]:
+             "**Bachelor's in Information Science and Engineering** | Visvesvaraya Technological University, Bengaluru, India"]:
     p = doc.add_paragraph()
     p.paragraph_format.left_indent = Inches(0.1)
     p.paragraph_format.space_after = Pt(3)
     runs(p, line)
 
 # ---------------- Experience ----------------
+# Each bullet follows STAR: situation/task -> action (with tools) -> measurable result.
 heading("PROFESSIONAL EXPERIENCE")
 job("George Mason University", "AI & ML Research Associate", "Fairfax, VA | August 2024 - Present")
 for b in [
-    "Co-developed **SHIELD** (**ACM WSDM '26**), a conversational AI platform for 9-1-1 call-taker training with **Fairfax County "
-    "DPSC**, using **LLM agents** to generate scenarios from CAD data and deliver **real-time metacognitive nudges**.",
-    "Co-developed **MATE-911** (**IEEE PST 2026**), a multimodal **RAG** system grounding **Llama 3.1 8B** in emergency protocols, "
-    "reaching **0.81 protocol F1**, a **3.0% hallucination rate**, and a **97.6% pass rate** on local hardware.",
-    "**Led the RAG knowledge base and data pipeline for both platforms**: OCR parsing, abbreviation expansion, completeness checks, "
-    "and segmentation of **160 gold-standard scenarios**, cutting hallucinations from **13.0% to 3.0%**.",
-    "Built the **retrieval layer** with **all-mpnet-base-v2** (768-dim) embeddings in a **ChromaDB HNSW cosine index**, attaching "
-    "metadata (category, severity, tags, confidence) for **filtered top-K retrieval** and a **70% similarity relevance gate**.",
-    "Engineered **prompt and context assembly** grounding **Llama 3.1 8B (Ollama)** in retrieved scenarios, tuning temperature, "
-    "token budgets, and context windows for **960 ms** text and **1.3 s** voice latency.",
-    "**Led the validation layer for both platforms**: **RAG guardrails** with a NENA-based **ontology validator**, **LLM** and "
-    "**NLI-based hallucination checks**, PASS/REVIEW/FAIL scoring, and an **85% similarity** gate.",
-    "Ran **RAG ablation studies** showing retrieval drives quality (**F1 0.81 vs. 0.59** and **97.6% vs. 49.7%** pass rate without "
-    "it), while ontology validation acts as a safety guardrail that cuts hallucinations from **9.5% to 3.0%**.",
-    "Built a **RAG research assistant** with **LlamaIndex, pgvector,** and **FAISS**, raising **recall@10 from 61% to 88%** "
-    "(evaluated with **RAGAS**) and serving **40+ researchers** at **190 ms p95** latency.",
-    "Built real-time **trace-log analytics** (event streams, Task Completion Rate, Average Field Latency, goal-alignment scoring) "
-    "feeding an instructor **performance dashboard** for adaptive feedback.",
-    "Applied **graph-based analytics** and **ensemble models** to large-scale disaster datasets on the **ORC Hopper HPC cluster**, "
-    "forecasting community coping trends with an **RMSE of 0.89**.",
-    "Implemented **model explainability** using **SHAP** for **intent classification** and **behavioral anomaly detection** models, "
-    "guiding threshold tuning and model governance; the **LightGBM** anomaly detector reduced false positives by **25%**.",
-    "Fine-tuned **Llama 3** with **LoRA/PEFT** and **QAT**, cutting model size by **40%** within **3%** of full-precision accuracy.",
-    "Took models and RAG services from **proof of concept to production** with **MLflow, FastAPI, Docker,** and **CI/CD**, "
-    "cutting release cycles from **2 weeks to 5 days** with **A/B testing**.",
+    "To scale 9-1-1 call-taker training beyond instructor role-play, co-developed **SHIELD** with **Fairfax County DPSC**, an "
+    "**LLM-agent** platform that simulates calls and coaches trainees in real time; published at **ACM WSDM '26**.",
+    "To generate safe training calls without commercial APIs, co-developed **MATE-911**, a **RAG** system on **Llama 3.1 8B** that "
+    "achieved **0.81 protocol F1** and a **3.0% hallucination rate**; published at **IEEE PST 2026**.",
+    "Facing unstructured, abbreviation-heavy call records, led the **RAG knowledge base and data pipeline** (OCR, cleaning, "
+    "chunking) for **160 gold-standard scenarios**, cutting hallucinations from **13.0% to 3.0%**.",
+    "To ground generation in verified protocols, built the **retrieval layer** with **Sentence Transformers** embeddings, "
+    "**ChromaDB**, and metadata-filtered **top-K retrieval**, raising the pass rate from **49.7% to 97.6%**.",
+    "To support live training sessions, engineered **prompt and context assembly** for **Llama 3.1 8B (Ollama)**, delivering "
+    "responses in under **1 second** for text and **1.3 seconds** for voice.",
+    "To keep unsafe content away from trainees, led the **validation layer** with **ontology-based guardrails** and **NLI "
+    "hallucination checks** against NENA protocols, lowering hallucinations from **9.5% to 3.0%**.",
+    "To speed up literature search, built a **RAG research assistant** with **LlamaIndex, pgvector,** and **FAISS**, raising "
+    "**recall@10 from 61% to 88%** (RAGAS-evaluated) for **40+ researchers** at **190 ms p95** latency.",
+    "To make model decisions explainable, applied **SHAP** to intent classification and behavioral **anomaly detection** models, "
+    "tuning **LightGBM** alert thresholds to cut false positives by **25%**.",
+    "To run LLMs on limited hardware, fine-tuned **Llama 3** with **LoRA/PEFT** and **quantization-aware training**, shrinking "
+    "models by **40%** while staying within **3%** of full-precision accuracy.",
+    "To move prototypes into production, set up **MLflow** tracking, **FastAPI** services, **Docker**, and **CI/CD**, cutting "
+    "release cycles from **2 weeks to 5 days** with **A/B testing**.",
+    "To study community coping during disasters, applied **graph analytics** and **ensemble models** on the **ORC Hopper HPC "
+    "cluster**, forecasting trends with an **RMSE of 0.89**.",
 ]:
     bullet(b)
 
-job("Carelon Global Solutions (Elevance Health)", "Machine Learning Engineer",
-    "Bengaluru, India | May 2022 - August 2023")
+job("Carelon Global Solutions (Elevance Health)", "Machine Learning Engineer", "Bengaluru, India | May 2022 - August 2023")
 for b in [
-    "Built NLP models using **BERT** and **BioBERT** for clinical entity extraction from unstructured medical text, achieving "
-    "**80% accuracy** and reducing processing time by **55%**.",
-    "Improved **Scikit-learn** and **XGBoost** models through feature engineering and hyperparameter tuning, increasing accuracy by "
-    "**8%** and cutting training time by **15%**.",
-    "Containerized ML inference services with **Docker, Kubernetes,** and **Jenkins CI/CD**, improving system uptime by **20%** "
-    "and enabling real-time EHR integration via **REST APIs**.",
-    "Engineered ML-ready ingestion of **400K+ XML/JSON healthcare records** into **Snowflake** and **Databricks**, accelerating "
-    "model training by **60%** and reducing preprocessing time by **70%**.",
-    "Built a daily **NPPES** ingestion workflow that improved ML data accuracy by **74%** and cut processing overhead by **60%**, and "
-    "built **PySpark** ETL on **AWS (Glue, SageMaker)** with **Delta Lake**, improving data reliability by **30%** under **HIPAA**.",
-    "Designed **20+ enterprise ETL pipelines** orchestrated with **Apache Airflow** and **AWS (S3, Lambda, Athena)**, boosting "
-    "throughput by **70%** and achieving **99.9% pipeline reliability** with end-to-end lineage tracking.",
+    "To automate clinical text review, built **BERT/BioBERT** entity-extraction models on unstructured medical notes, reaching "
+    "**80% accuracy** and cutting processing time by **55%**.",
+    "To improve prediction quality, tuned **Scikit-learn** and **XGBoost** models through feature engineering and hyperparameter "
+    "search, raising accuracy by **8%** and cutting training time by **15%**.",
+    "To serve models reliably, containerized inference services with **Docker, Kubernetes,** and **Jenkins CI/CD**, improving "
+    "uptime by **20%** and enabling real-time EHR integration via **REST APIs**.",
+    "To speed up model training, built ingestion of **400K+ XML/JSON healthcare records** into **Snowflake** and **Databricks**, "
+    "accelerating training by **60%** and cutting preprocessing time by **70%**.",
+    "To fix inaccurate provider data feeding ML models, automated daily **NPPES** ingestion in **Python**, improving data accuracy "
+    "by **74%** and reducing processing overhead by **60%**.",
+    "To support ML at scale, designed **20+ ETL pipelines** with **Airflow, PySpark,** and **AWS (S3, Lambda, Glue)**, raising "
+    "throughput by **70%** and reaching **99.9% reliability** under **HIPAA**.",
 ]:
     bullet(b)
 
 job("Carelon Global Solutions (Elevance Health)", "Data Engineer", "Bengaluru, India | October 2020 - April 2022")
 for b in [
-    "Aligned ETL pipelines with business KPIs on the **Seven Plus Locations** project, improving claims data accuracy.",
-    "Redesigned **claims-balancing ETL workflows** and automated **medical invoice processing** pipelines, reducing operational "
-    "overhead by **60%** and manual errors by **70%**.",
-    "Delivered self-service BI pipelines with **Tableau, Power BI,** and SQL-based models, reducing reporting latency by **40%** and "
-    "enabling anomaly detection for healthcare analytics.",
-    "Migrated large-scale processing workloads from **Hive** to **Apache Spark/PySpark**, and moved **Sqoop/Hadoop** ingestion to "
-    "**Azure Data Services**, improving performance, scalability, and pipeline efficiency.",
-    "Developed **RESTful microservices** with **OAuth 2.0** and API versioning, and designed **MongoDB** data models with "
-    "**Python/Java** validation scripts (UDFs) to improve data quality and consistency.",
+    "To reduce manual claims reconciliation, redesigned **claims-balancing ETL workflows** in **Python** and **SQL**, cutting "
+    "operational overhead by **60%**.",
+    "To eliminate costly invoice errors, automated **medical invoice processing** pipelines with rule-based classification, "
+    "reducing manual errors by **70%**.",
+    "To give business teams faster insights, delivered self-service **Tableau** and **Power BI** reporting pipelines, cutting "
+    "reporting latency by **40%**.",
+    "To handle growing data volumes, migrated **Hive** and **Hadoop** workloads to **Apache Spark** and **Azure Data Services**, "
+    "improving processing speed and scalability.",
 ]:
     bullet(b)
 
@@ -234,25 +226,22 @@ for b in [
 heading("PROJECTS")
 p = doc.add_paragraph()
 p.paragraph_format.space_after = Pt(2)
-runs(p, "**Agentic AI-Based Ticket Automation System** | SecureGPT, LLaMA, AWS SQS, JIRA, NIST-CSF")
-for b in [
-    "Built an **agentic AI** pipeline with **SecureGPT** and **LLaMA** on **AWS SQS** event queues that monitors cybersecurity "
-    "threats and auto-generates **JIRA** tickets under **NIST-CSF**, reaching **93% automation accuracy** and cutting triage time by **70%**.",
-    "Used **LLM prompt engineering** to classify and rank events, improving scalability by **50%** and cutting operational risk by **40%**.",
-]:
-    bullet(b)
+runs(p, "**Agentic AI Ticket Automation System** | SecureGPT, LLaMA, AWS SQS, JIRA")
+bullet("To cut security-ticket triage time, built an **agentic AI** system with **SecureGPT** and **LLaMA** on **AWS SQS** that "
+       "classifies threats and auto-creates **JIRA** tickets, reaching **93% accuracy** and **70%** faster triage.")
 
 # ---------------- Publications ----------------
 heading("PUBLICATIONS")
 for pub in [
     "R. S. Nayaka, **R. Somashekar**, K. B. Laskey, L. Wells II, H. Purohit. \"SHIELD: A Framework for Online Conversational AI "
     "System for Self-Regulated Learning at Emergency Communications Centers.\" *ACM WSDM '26*. doi:10.1145/3773966.3779411",
-    "R. S. Nayaka, **R. Somashekar**, and H. Purohit. \"MATE-911: Multimodal AI-powered Training Environment for Next-Generation "
-    "911 Dispatcher Preparedness.\" In *IEEE PST Conference*, 2026.",
+    "R. S. Nayaka, **R. Somashekar**, H. Purohit. \"MATE-911: Multimodal AI-powered Training Environment for Next-Generation "
+    "911 Dispatcher Preparedness.\" *IEEE PST 2026*.",
 ]:
     bullet(pub)
 
 doc.core_properties.author = "Ritesh Somashekar"
 doc.core_properties.title = "Ritesh Somashekar - AI & ML Engineer Resume"
+doc.core_properties.keywords = "AI Engineer, Machine Learning Engineer, RAG, LLM, Generative AI, Data Engineer"
 doc.save(OUT)
 print("saved", OUT)

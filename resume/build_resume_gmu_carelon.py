@@ -169,8 +169,9 @@ for b in [
     "that feed an instructor **performance dashboard** for adaptive feedback.",
     "Applied **graph-based analytics** and **ensemble models** to large-scale disaster datasets on the **ORC Hopper HPC cluster** to "
     "forecast community coping trends with an **RMSE of 0.89**, visualizing findings in **R** and **Tableau**.",
-    "Implemented **model explainability** using **SHAP** to surface the drivers behind ensemble-model predictions, supporting "
-    "model governance, risk assessment, and documentation for research stakeholders.",
+    "Implemented **model explainability** using **SHAP** for **intent classification** and **behavioral anomaly detection** models, "
+    "surfacing the features driving each prediction to guide threshold tuning and model governance; the **LightGBM** anomaly "
+    "detector with threshold-based alerting reduced false positives by **25%**.",
     "Fine-tuned **Llama 3** and transformer models using **LoRA/PEFT** and **Quantization-Aware Training (QAT)**, reducing model "
     "size by **40%** while keeping accuracy within **3%** of full-precision benchmarks.",
     "Established **MLflow** experiment tracking and model registry for LLM and RAG experiments, logging parameters, prompts, and "

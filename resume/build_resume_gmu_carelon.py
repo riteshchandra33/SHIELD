@@ -131,7 +131,7 @@ skill("Generative AI & LLMs", "Llama 3/3.1, Ollama, Retrieval-Augmented Generati
 skill("LLM Evaluation & Safety", "Hallucination Detection, Ontology-Based Validation, NLI-Based Validation, Semantic Similarity "
       "Scoring, Ablation Studies, Protocol F1, Confidence Scoring")
 skill("Machine Learning & NLP", "Supervised & Unsupervised Learning, Transformers, BERT, BioBERT, Hugging Face, XGBoost, LightGBM, "
-      "Graph Analytics, Ensemble Models, Time Series Forecasting, Anomaly Detection, Feature Engineering")
+      "Graph Analytics, Ensemble Models, Time Series Forecasting, Anomaly Detection, Feature Engineering, Model Explainability (SHAP)")
 skill("MLOps & ML Infrastructure", "MLflow, Docker, Kubernetes, Jenkins, CI/CD, FastAPI, Git, DVC, Model Deployment")
 skill("Data Engineering & Big Data", "Apache Airflow, Apache Spark, PySpark, Kafka, Databricks, Snowflake, Delta Lake, Hadoop, Hive, "
       "Sqoop, Informatica PowerCenter, Precisely Data360, SQL Server, MySQL, MongoDB")
@@ -169,6 +169,8 @@ for b in [
     "that feed an instructor **performance dashboard** for adaptive feedback.",
     "Applied **graph-based analytics** and **ensemble models** to large-scale disaster datasets on the **ORC Hopper HPC cluster** to "
     "forecast community coping trends with an **RMSE of 0.89**, visualizing findings in **R** and **Tableau**.",
+    "Implemented **model explainability** using **SHAP** to surface the drivers behind ensemble-model predictions, supporting "
+    "model governance, risk assessment, and documentation for research stakeholders.",
     "Fine-tuned **Llama 3** and transformer models using **LoRA/PEFT** and **Quantization-Aware Training (QAT)**, reducing model "
     "size by **40%** while keeping accuracy within **3%** of full-precision benchmarks.",
     "Established **MLflow** experiment tracking and model registry for LLM and RAG experiments, logging parameters, prompts, and "

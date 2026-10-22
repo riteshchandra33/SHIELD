@@ -154,11 +154,12 @@ for b in [
     "Co-developed **SHIELD**, an online conversational AI training platform for 9-1-1 call-takers built with **Fairfax County "
     "DPSC**, using **LLM agents** to generate call scenarios from CAD data, deliver **real-time metacognitive nudges**, and produce "
     "post-call reflection analytics; published at **ACM WSDM ’26**.",
-    "Engineered the SHIELD data pipeline in **Python**, covering OCR parsing, abbreviation expansion, completeness checks, "
-    "segmentation, and standardization of **160 gold-standard emergency scenarios** across accident, fire, medical, and alarm incidents.",
-    "Built a **911 ontology validator** derived from **NENA** standards and DPSC procedures, combining rule-based and **LLM-based "
-    "semantic checks** for unsafe content, protocol compliance, and **hallucination detection** with PASS/REVIEW/FAIL confidence "
-    "scoring and an **85% cosine-similarity** quality gate.",
+    "**Led the data pipeline for both SHIELD and MATE-911** in **Python**, covering OCR parsing, abbreviation expansion, "
+    "completeness checks, segmentation, standardization, and **ChromaDB** embedding of **160 gold-standard emergency scenarios** "
+    "across accident, fire, medical, and alarm incidents.",
+    "**Led the validation layer for both platforms**, building a **911 ontology validator** derived from **NENA** standards and "
+    "DPSC procedures that combines rule-based and **LLM-based semantic checks** for unsafe content, protocol compliance, and "
+    "**hallucination detection**, with PASS/REVIEW/FAIL confidence scoring and an **85% cosine-similarity** quality gate.",
     "Co-developed **MATE-911** (published at **IEEE PST 2026**), a multimodal **RAG** system using **Llama 3.1 8B (Ollama)**, **ChromaDB**, and **all-mpnet-base-v2** "
     "embeddings to generate protocol-grounded voice and text scenarios on commodity hardware, achieving **0.81 protocol F1**, a "
     "**3.0% hallucination rate**, a **97.6% pass rate**, and **sub-2-second latency**.",

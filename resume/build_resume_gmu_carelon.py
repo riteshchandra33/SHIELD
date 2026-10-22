@@ -149,7 +149,7 @@ skill("Generative AI & RAG", "LLMs, Retrieval-Augmented Generation (RAG), LangCh
 skill("LLM Evaluation", "RAGAS, Recall@K, Hallucination Detection, Guardrails, Ablation Studies, A/B Testing")
 skill("Machine Learning & NLP", "PyTorch, TensorFlow, Scikit-learn, Hugging Face Transformers, BERT, XGBoost, LightGBM, SHAP, "
       "Anomaly Detection, Time Series Forecasting")
-skill("MLOps", "MLflow, Docker, Kubernetes, FastAPI, CI/CD (Jenkins), Git, DVC")
+skill("MLOps & LLMOps", "MLflow, Model Monitoring, Drift Detection, Docker, Kubernetes, FastAPI, CI/CD (Jenkins), Git, DVC")
 skill("Data Engineering", "Apache Airflow, Apache Spark, PySpark, Kafka, Databricks, Snowflake, Delta Lake, Hadoop, SQL Server, MongoDB")
 skill("Cloud & BI", "AWS (S3, Lambda, Glue, SageMaker, SQS), Azure, Tableau, Power BI")
 
@@ -173,7 +173,7 @@ for b in [
     "achieved **0.81 protocol F1** and a **3.0% hallucination rate**; published at **IEEE PST 2026**.",
     "Facing unstructured, abbreviation-heavy call records, led the **RAG knowledge base and data pipeline** (OCR, cleaning, "
     "chunking) for **160 gold-standard scenarios**, cutting hallucinations from **13.0% to 3.0%**.",
-    "To ground generation in verified protocols, built the **retrieval layer** with **Sentence Transformers** embeddings, "
+    "To ground generation in verified protocols, built a **semantic search** retrieval layer with **Sentence Transformers**, "
     "**ChromaDB**, and metadata-filtered **top-K retrieval**, raising the pass rate from **49.7% to 97.6%**.",
     "To support live training sessions, engineered **prompt and context assembly** for **Llama 3.1 8B (Ollama)**, delivering "
     "responses in under **1 second** for text and **1.3 seconds** for voice.",
@@ -204,6 +204,8 @@ for b in [
     "search, raising accuracy by **8%** and cutting training time by **15%**.",
     "To serve models reliably, containerized inference services with **Docker, Kubernetes,** and **Jenkins CI/CD**, improving "
     "uptime by **20%** and enabling real-time EHR integration via **REST APIs**.",
+    "To keep production models accurate over time, set up **model monitoring**, **drift detection**, and automated retraining "
+    "pipelines, sustaining **95%+ accuracy** for **12 months** across **200+ end users**.",
     "To speed up model training, built ingestion of **400K+ XML/JSON healthcare records** into **Snowflake** and **Databricks**, "
     "accelerating training by **60%** and cutting preprocessing time by **70%**.",
     "To fix inaccurate provider data feeding ML models, automated daily **NPPES** ingestion in **Python**, improving data accuracy "

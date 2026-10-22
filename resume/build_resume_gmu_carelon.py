@@ -141,9 +141,9 @@ bullet("**AI & Machine Learning Engineer** with **5+ years** of experience progr
 bullet("Strong background in **data engineering** with **Apache Airflow, Spark/PySpark, Snowflake, and Databricks**, and **cloud "
        "pipelines on AWS (S3, Lambda, Athena, Glue, SageMaker)** and **Azure**, with a focus on **HIPAA-compliant** healthcare data. "
        "Experienced in **MLOps** using **MLflow, Docker, Kubernetes, FastAPI,** and **CI/CD pipelines**.")
-bullet("Demonstrated impact, including **RAG recall@10 raised from 61% to 88%**, a **0.81 protocol F1 with a 3.0% hallucination rate**, **99.9% "
-       "pipeline reliability**, **74% higher data accuracy**, and **60% faster model training**. Adept at collaborating with "
-       "researchers, public agencies, and business stakeholders to deliver **end-to-end AI solutions** from research to production.")
+bullet("Demonstrated impact, including **RAG recall@10 raised from 61% to 88%**, a **0.81 protocol F1 with a 3.0% hallucination "
+       "rate**, **99.9% pipeline reliability**, and **60% faster model training**, delivering **end-to-end AI solutions** from "
+       "research to production.")
 
 # ---------------- Skills ----------------
 heading("TECHNICAL SKILLS")
@@ -158,8 +158,8 @@ skill("Machine Learning & NLP", "Supervised & Unsupervised Learning, Transformer
 skill("MLOps & ML Infrastructure", "MLflow, Docker, Kubernetes, Jenkins, CI/CD, FastAPI, Git, DVC, Model Deployment")
 skill("Data Engineering & Big Data", "Apache Airflow, Apache Spark, PySpark, Kafka, Databricks, Snowflake, Delta Lake, Hadoop, Hive, "
       "Sqoop, Informatica PowerCenter, Precisely Data360, SQL Server, MySQL, MongoDB")
-skill("Cloud Platforms", "AWS (S3, Lambda, Athena, Glue, SageMaker, SQS), Azure (Data Services, Stream Analytics)")
-skill("Data Analysis & Visualization", "Tableau, Power BI (DAX), Excel (VBA, Formulas), Statistical Analysis, Data Lineage")
+skill("Cloud & Visualization", "AWS (S3, Lambda, Athena, Glue, SageMaker, SQS), Azure (Data Services, Stream Analytics), Tableau, "
+      "Power BI (DAX), Excel (VBA)")
 
 # ---------------- Education ----------------
 heading("EDUCATION")
@@ -196,12 +196,11 @@ for b in [
     "Developed a **RAG research assistant** with **LlamaIndex**, **pgvector**, and **FAISS**, optimizing chunking, embeddings, "
     "retrieval, and context assembly to raise **recall@10 from 61% to 88%**, evaluated with **RAGAS** (faithfulness, answer "
     "relevance, context precision) and served to **40+ researchers** at about **190 ms p95** latency.",
-    "Applied **graph-based analytics** and **ensemble models** to large-scale disaster datasets on the **ORC Hopper HPC cluster** to "
-    "forecast community coping trends with an **RMSE of 0.89**, visualizing findings in **R** and **Tableau**.",
+    "Applied **graph-based analytics** and **ensemble models** to large-scale disaster datasets on the **ORC Hopper HPC cluster**, "
+    "forecasting community coping trends with an **RMSE of 0.89**.",
     "Implemented **model explainability** using **SHAP** for **intent classification** and **behavioral anomaly detection** models, "
     "guiding threshold tuning and model governance; the **LightGBM** anomaly detector reduced false positives by **25%**.",
-    "Fine-tuned **Llama 3** and transformer models using **LoRA/PEFT** and **Quantization-Aware Training (QAT)**, reducing model "
-    "size by **40%** while keeping accuracy within **3%** of full-precision benchmarks.",
+    "Fine-tuned **Llama 3** with **LoRA/PEFT** and **QAT**, cutting model size by **40%** within **3%** of full-precision accuracy.",
     "Took models and RAG services from **proof of concept to production** with **MLflow** experiment tracking and model registry, "
     "**FastAPI**, **Docker**, and **CI/CD**, reducing release cycles from **2 weeks to 5 days** and enabling **A/B testing** of "
     "model and prompt versions.",
@@ -211,33 +210,42 @@ for b in [
 job("Carelon Global Solutions (Elevance Health)", "Machine Learning Engineer",
     "Bengaluru, India | May 2022 - August 2023")
 for b in [
-    "Designed and managed **20+ enterprise ETL pipelines**, boosting data throughput by **70%** and ensuring high availability for "
-    "downstream AI/BI applications.",
-    "Automated workflows with **Apache Airflow, Python,** and **AWS (S3, Lambda, Athena)**, achieving **99.9% pipeline "
-    "reliability** with end-to-end lineage tracking.",
-    "Built a daily ingestion workflow from **NPPES** repositories, improving data accuracy by **74%** and cutting processing "
-    "overhead by **60%**.",
-    "Engineered ingestion pipelines for **400K+ XML/JSON healthcare records** into **Snowflake** and **Databricks**, accelerating "
-    "model training by **60%** and reducing preprocessing time by **70%**.",
     "Built NLP models using **BERT** and **BioBERT** for clinical entity extraction from unstructured medical text, achieving "
     "**80% accuracy** and reducing processing time by **55%**.",
-    "Built scalable **PySpark** ETL on **AWS (Glue, SageMaker)** with **Delta Lake**, improving data reliability by **30%** under "
-    "**HIPAA**, and improved **Scikit-learn/XGBoost** models, increasing accuracy by **8%** and cutting training time by **15%**.",
+    "Improved **Scikit-learn** and **XGBoost** models through feature engineering and hyperparameter tuning, increasing accuracy by "
+    "**8%** and cutting training time by **15%**.",
     "Containerized ML inference services with **Docker, Kubernetes,** and **Jenkins CI/CD**, improving system uptime by **20%** "
     "and enabling real-time EHR integration via **REST APIs**.",
+    "Engineered ML-ready ingestion of **400K+ XML/JSON healthcare records** into **Snowflake** and **Databricks**, accelerating "
+    "model training by **60%** and reducing preprocessing time by **70%**.",
+    "Built a daily **NPPES** ingestion workflow that improved ML data accuracy by **74%** and cut processing overhead by **60%**, and "
+    "built **PySpark** ETL on **AWS (Glue, SageMaker)** with **Delta Lake**, improving data reliability by **30%** under **HIPAA**.",
+    "Designed **20+ enterprise ETL pipelines** orchestrated with **Apache Airflow** and **AWS (S3, Lambda, Athena)**, boosting "
+    "throughput by **70%** and achieving **99.9% pipeline reliability** with end-to-end lineage tracking.",
 ]:
     bullet(b)
 
 job("Carelon Global Solutions (Elevance Health)", "Data Engineer", "Bengaluru, India | October 2020 - April 2022")
 for b in [
-    "Partnered with stakeholders on the **Seven Plus Locations** project to align ETL pipelines with business KPIs, improving "
-    "claims data accuracy and driving cost savings.",
+    "Aligned ETL pipelines with business KPIs on the **Seven Plus Locations** project, improving claims data accuracy.",
     "Redesigned **claims-balancing ETL workflows** and automated **medical invoice processing** pipelines, reducing operational "
     "overhead by **60%** and manual errors by **70%**.",
     "Migrated large-scale processing workloads from **Hive** to **Apache Spark/PySpark**, and moved **Sqoop/Hadoop** ingestion to "
     "**Azure Data Services**, improving performance, scalability, and pipeline efficiency.",
     "Developed **RESTful microservices** with **OAuth 2.0** and API versioning, and designed **MongoDB** data models with "
     "**Python/Java** validation scripts (UDFs) to improve data quality and consistency.",
+]:
+    bullet(b)
+
+# ---------------- Projects ----------------
+heading("PROJECTS")
+p = doc.add_paragraph()
+p.paragraph_format.space_after = Pt(2)
+runs(p, "**Agentic AI-Based Ticket Automation System** | SecureGPT, LLaMA, AWS SQS, JIRA, NIST-CSF")
+for b in [
+    "Built an **agentic AI** pipeline with **SecureGPT** and **LLaMA** on **AWS SQS** event queues that monitors cybersecurity "
+    "threats and auto-generates **JIRA** tickets under **NIST-CSF**, reaching **93% automation accuracy** and cutting triage time by **70%**.",
+    "Used **LLM prompt engineering** to classify and rank events, improving scalability by **50%** and cutting operational risk by **40%**.",
 ]:
     bullet(b)
 

@@ -113,7 +113,7 @@ p.add_run(" | LinkedIn").font.size = Pt(12)
 # ---------------- Summary ----------------
 heading("PROFESSIONAL SUMMARY")
 bullet("**AI & Machine Learning Engineer** with **5+ years** of experience building **LLM and RAG systems**, **NLP models**, and "
-       "**enterprise data pipelines** across healthcare and public-safety domains. Published researcher (**ACM WSDM ’26**) with "
+       "**enterprise data pipelines** across healthcare and public-safety domains. Published researcher (**ACM WSDM ’26**, **IEEE PST 2026**) with "
        "hands-on expertise in **Llama 3, ChromaDB, Hugging Face, PyTorch, and Scikit-learn**, and in **hallucination detection, "
        "ontology-based validation, and LLM evaluation**.")
 bullet("Strong background in **data engineering** with **Apache Airflow, Spark/PySpark, Snowflake, and Databricks**, and **cloud "
@@ -159,7 +159,7 @@ for b in [
     "Built a **911 ontology validator** derived from **NENA** standards and DPSC procedures, combining rule-based and **LLM-based "
     "semantic checks** for unsafe content, protocol compliance, and **hallucination detection** with PASS/REVIEW/FAIL confidence "
     "scoring and an **85% cosine-similarity** quality gate.",
-    "Developed **MATE-911**, a multimodal **RAG** system using **Llama 3.1 8B (Ollama)**, **ChromaDB**, and **all-mpnet-base-v2** "
+    "Co-developed **MATE-911** (published at **IEEE PST 2026**), a multimodal **RAG** system using **Llama 3.1 8B (Ollama)**, **ChromaDB**, and **all-mpnet-base-v2** "
     "embeddings to generate protocol-grounded voice and text scenarios on commodity hardware, achieving **0.81 protocol F1**, a "
     "**3.0% hallucination rate**, a **97.6% pass rate**, and **sub-2-second latency**.",
     "Ran **ablation studies** showing RAG retrieval drives scenario quality (**F1 0.81 vs. 0.59** without it) and ontology "
@@ -220,7 +220,7 @@ for pub in [
     "System for Self-Regulated Learning at Emergency Communications Centers.” In *Proceedings of the 19th ACM International "
     "Conference on Web Search and Data Mining (WSDM ’26)*, Boise, ID, 2026. doi:10.1145/3773966.3779411",
     "R. S. Nayaka, **R. Somashekar**, and H. Purohit. “MATE-911: Multimodal AI-powered Training Environment for Next-Generation "
-    "911 Dispatcher Preparedness.” 2026.",
+    "911 Dispatcher Preparedness.” In *IEEE PST Conference*, 2026.",
 ]:
     bullet(pub)
 

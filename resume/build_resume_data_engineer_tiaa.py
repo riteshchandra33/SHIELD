@@ -138,8 +138,8 @@ hyperlink(p, "https://github.com/riteshchandra33", "GitHub", 12)
 
 # ---------------- Summary ----------------
 heading("PROFESSIONAL SUMMARY")
-bullet("**Data Engineer** with **5+ years** building **ETL/ELT pipelines** and cloud data platforms on **AWS** and **Snowflake** for "
-       "healthcare and university research; pursuing **AWS Certified Data Engineer - Associate**.")
+bullet("**Data Engineer** with **6+ years** building **ETL/ELT pipelines** and cloud data platforms on **AWS** and **Snowflake** for "
+       "healthcare, industrial IoT, and research; pursuing **AWS Certified Data Engineer - Associate**.")
 bullet("Hands-on with **AWS Glue, S3, Lambda, EventBridge, CloudWatch, Athena, SQS,** and **SNS** plus **Apache Airflow**, "
        "delivering **99.9% pipeline reliability** with logging, lineage tracking, and automated data quality checks.")
 bullet("Skilled in **Python, SQL, PySpark, Snowflake, Databricks,** and **Delta Lake**, with **HIPAA-compliant** data handling and "
@@ -151,10 +151,10 @@ skill("AWS Data & Serverless", "**AWS Glue**, **Amazon S3**, **AWS Lambda**, **A
       "Athena, Amazon SQS, Amazon SNS, Amazon RDS, API Gateway")
 skill("Logging & Monitoring", "**Amazon CloudWatch** (Logs), S3 Log Archival, Pipeline Monitoring & Alerting, Data Lineage, "
       "Audit Logging")
-skill("Data Warehousing & Lakes", "**Snowflake**, Databricks, Delta Lake, Data Modeling, Data Warehousing, Data Quality, "
+skill("Data Warehousing & Lakes", "**Snowflake**, Databricks, Delta Lake, Azure Data Lake, Star Schema, Data Modeling, Data Quality, "
       "Data Validation")
-skill("Pipelines & Orchestration", "ETL/ELT, **Apache Airflow**, Apache Spark, **PySpark**, Kafka, Hadoop, Hive, Informatica "
-      "PowerCenter, Precisely Data360")
+skill("Pipelines & Orchestration", "ETL/ELT, **Apache Airflow**, Apache Spark, **PySpark**, Kafka, Azure Data Factory, dbt, Hadoop, "
+      "Hive, Informatica PowerCenter")
 skill("Programming & Databases", "**Python**, **SQL**, R, Scala, Bash, SQL Server, MySQL, PostgreSQL, MongoDB, ChromaDB")
 skill("DevOps & Tools", "Git, GitHub, CI/CD, Docker, Kubernetes, DVC, FastAPI, REST APIs, Jira, Postman, Tableau, Power BI")
 
@@ -214,12 +214,27 @@ for b in [
     "by **74%** and cutting processing overhead by **60%**.",
     "To process growing data volumes, engineered **PySpark** and **Databricks** pipelines handling **500GB+** of structured and "
     "unstructured data, reducing processing time by **45%**.",
-    "To modernize legacy workloads, migrated **Hive** and **Hadoop** jobs to **Apache Spark**, improving processing speed and "
-    "scalability across enterprise data workflows.",
     "To give business teams faster reporting, delivered self-service **Tableau** and **Power BI** pipelines on SQL data models, "
     "cutting reporting latency by **40%**.",
     "To reduce manual claims work, redesigned **claims-balancing ETL workflows** and automated medical invoice pipelines, "
     "cutting operational overhead by **60%** and manual errors by **70%**.",
+]:
+    bullet(b)
+
+job("Honeywell", "Data Engineer", "India | January 2019 - September 2020")
+for b in [
+    "To unify industrial IoT telemetry, built **ETL/ELT pipelines** with **Python, PySpark,** and **Apache Spark**, ingesting data "
+    "from **8+ source systems** via REST APIs and processing **2M+ records daily** into **Azure Data Lake**.",
+    "To catch pipeline failures early, automated batch workflows with **Azure Data Factory** and **Apache Airflow**, adding "
+    "validation and monitoring across **15+ daily jobs** and cutting issue detection time to **under 15 minutes**.",
+    "To improve report accuracy, implemented **data quality frameworks** (null, duplicate, schema, and referential integrity "
+    "checks), reducing downstream reporting errors by **40%** across **3 plant sites**.",
+    "To speed up operational reporting, designed a **star-schema** data warehouse and reusable **dbt** SQL transformations, "
+    "cutting report turnaround by **60%** across **5 teams** and improving data prep efficiency by **35%**.",
+    "To modernize legacy workloads, migrated **Hive** and **Hadoop/Sqoop** jobs to **Apache Spark** and **Azure Data Services**, "
+    "improving processing speed and scalability.",
+    "To keep raw data durable and auditable, archived telemetry in **AWS S3** and managed production deployments with **Git, "
+    "CI/CD,** and Linux shell scripting.",
 ]:
     bullet(b)
 

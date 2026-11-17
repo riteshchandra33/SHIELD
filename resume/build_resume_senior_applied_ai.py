@@ -129,15 +129,12 @@ hyperlink(p, LINKEDIN, "LinkedIn")
 
 # ---------------- Summary ----------------
 heading("PROFESSIONAL SUMMARY")
-bullet("**AI/ML Engineer** with **6+ years of experience** progressing from **data engineering** to **production AI**, delivering "
-       "end-to-end **AI/ML, Generative AI, RAG, agentic AI,** and **data platforms** with deep expertise in **Python, PyTorch, Hugging "
-       "Face, LangChain, LlamaIndex, Apache Spark, PySpark, Kafka, Flink,** and **SQL**; published at **ACM WSDM '26** and **IEEE PST 2026**.", 3, 1.15)
-bullet("Proven impact in production AI, including improving **RAG recall from 61% to 88%**, cutting **LLM hallucinations from 9.5% to "
-       "3.0%** with **guardrails**, reaching **93% automation accuracy** with a **multi-agent workflow**, and reducing **ML deployment "
-       "cycles by 79% (2 weeks to 3 days)**.", 3, 1.15)
-bullet("Specialized in **multi-agent and agentic workflows**, **AI evaluation and guardrails**, **LLM fine-tuning (LoRA, PEFT)**, vector "
-       "search, prompt engineering, **MLflow, Docker, Kubernetes, FastAPI,** and **CI/CD**, shipping AI features from requirements to "
-       "**scalable, reliable, and measurable production solutions**.", 3, 1.15)
+bullet("**AI/ML Engineer** with **6+ years** progressing from **data engineering** to **production AI**, building **Generative AI, RAG, "
+       "and agentic systems** with **Python, Spark, PyTorch,** and **LangChain**; published at **ACM WSDM '26** and **IEEE PST 2026**.", 3, 1.15)
+bullet("Proven impact: **RAG recall from 61% to 88%**, **LLM hallucinations cut from 9.5% to 3.0%** with **guardrails**, **93% "
+       "automation accuracy** from a **multi-agent workflow**, and **deployment cycles cut 79%**.", 3, 1.15)
+bullet("Specialized in **multi-agent and agentic workflows**, **AI evaluation and guardrails**, **LoRA/PEFT fine-tuning**, **MLflow, "
+       "Docker, Kubernetes,** and **CI/CD**, shipping AI features from requirements to production.", 3, 1.15)
 
 # ---------------- Skills ----------------
 heading("TECHNICAL SKILLS")
@@ -181,16 +178,12 @@ for b in [
     "validation layer, cutting hallucinations from **9.5% to 3.0%** at **0.81 protocol F1**.",
     "Built a **multi-agent** ticket workflow on **AWS (Lambda, EventBridge, SQS, S3, CloudWatch)** where **SecureGPT** and **LLaMA** "
     "agents categorize, track SLAs, and escalate Jira tickets, reaching **93% automation accuracy** and **70%** faster triage.",
-    "Built an end-to-end biomedical ML data pipeline using **Python, SQL, Pandas, AWS S3,** and **DVC**, curating **30K+ "
-    "publications** through cleaning, deduplication, semantic chunking, metadata tagging, and reproducible train/eval splits.",
-    "Fine-tuned **BioBERT** with **PyTorch, Hugging Face,** and **PEFT/LoRA** for biomedical NER, using **Optuna** for hyperparameter "
-    "tuning and improving F1 by **18 points** over spaCy across **6K+ annotated sentences**.",
-    "Developed a **RAG** research assistant with **LlamaIndex**, prompt engineering, **pgvector**, and **FAISS**, optimizing "
-    "embeddings, retrieval, and context assembly to improve **recall@10 from 61% to 88%**.",
-    "Deployed the RAG application with **FastAPI and Docker**, implementing grounded, cited responses, automated API testing, and "
-    "**Git-based CI/CD**, supporting **40+ researchers** at approximately **190ms p95 latency**.",
-    "Established reproducible ML experimentation, monitoring, and evaluation using **MLflow, Git, DVC,** and **RAGAS**, reducing "
-    "iteration cycles from **3 days to 16 hours**, with protocols adopted by **two follow-on LLM studies**.",
+    "Built a biomedical data pipeline with **Python, SQL, AWS S3,** and **DVC** curating **30K+ publications**, and fine-tuned "
+    "**BioBERT** with **PEFT/LoRA** and **Optuna**, improving NER F1 by **18 points** over spaCy.",
+    "Developed and deployed a **RAG** research assistant with **LlamaIndex, pgvector, FAISS, FastAPI,** and **Docker**, raising "
+    "**recall@10 from 61% to 88%** for **40+ researchers** at about **190ms p95 latency**.",
+    "Established reproducible evaluation with **MLflow, DVC, RAGAS,** and **Git-based CI/CD**, cutting iteration cycles from **3 "
+    "days to 16 hours**, with protocols adopted by **two follow-on LLM studies**.",
 ]:
     bullet(b)
 
@@ -221,18 +214,12 @@ for b in [
     "reducing downstream reporting errors by **40%** across **3 plant sites**.",
     "Designed a **dimensional data warehouse** using **star schema** for asset uptime and operational KPIs, cutting report turnaround "
     "time by **60%** across **5 operational teams**.",
+    "Built reusable **SQL Server** transformation logic using **dbt** for data cleansing, normalization, joins, and reconciliation, "
+    "improving data prep efficiency by **35%**.",
+    "Managed production deployments using **Git, CI/CD,** and Linux shell scripting, archived raw telemetry in **AWS S3**, and "
+    "partnered with Power BI developers on **3 on-time dashboard releases**.",
 ]:
     bullet(b)
-
-# ---------------- Publications ----------------
-heading("PUBLICATIONS")
-for pub in [
-    "R. S. Nayaka, **R. Somashekar**, K. B. Laskey, L. Wells II, H. Purohit. \"SHIELD: A Framework for Online Conversational AI "
-    "System for Self-Regulated Learning at Emergency Communications Centers.\" *ACM WSDM '26*. doi:10.1145/3773966.3779411",
-    "R. S. Nayaka, **R. Somashekar**, H. Purohit. \"MATE-911: Multimodal AI-powered Training Environment for Next-Generation 911 "
-    "Dispatcher Preparedness.\" *IEEE PST 2026*.",
-]:
-    bullet(pub)
 
 # ---------------- Education ----------------
 heading("EDUCATION")
